@@ -1,0 +1,3 @@
+[submodule "ltb-util"]
+	path = ltb-util
+	url = https://github.com/LoganBarnes/ltb-util.git

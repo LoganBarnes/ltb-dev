@@ -4,8 +4,42 @@
 cmake_minimum_required(VERSION 3.21)
 project(LtbDev)
 
-add_library(ltb-global-settings INTERFACE)
-target_compile_options(ltb-global-settings
+# Prevent cyclic dependencies even for static libs
+set(GLOBAL_DEPENDS_NO_CYCLES ON)
+# Prevent cmake from creating build artifacts in the source directory
+set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
+
+# Set a cache dir for CPM so it doesn't download repos multiple times
+set(CPM_SOURCE_CACHE ${CMAKE_CURRENT_LIST_DIR}/build-deps)
+
+#############################
+### CMake Package Manager ###
+#############################
+set(CPM_DOWNLOAD_VERSION 0.35.0)
+
+if (CPM_SOURCE_CACHE)
+    set(CPM_DOWNLOAD_LOCATION "${CPM_SOURCE_CACHE}/cpm/CPM_${CPM_DOWNLOAD_VERSION}.cmake")
+elseif (DEFINED ENV{CPM_SOURCE_CACHE})
+    set(CPM_DOWNLOAD_LOCATION "$ENV{CPM_SOURCE_CACHE}/cpm/CPM_${CPM_DOWNLOAD_VERSION}.cmake")
+else ()
+    set(CPM_DOWNLOAD_LOCATION "${CMAKE_BINARY_DIR}/cmake/CPM_${CPM_DOWNLOAD_VERSION}.cmake")
+endif ()
+
+if (NOT (EXISTS ${CPM_DOWNLOAD_LOCATION}))
+    message(STATUS "Downloading CPM.cmake to ${CPM_DOWNLOAD_LOCATION}")
+    file(DOWNLOAD
+         https://github.com/TheLartians/CPM.cmake/releases/download/v${CPM_DOWNLOAD_VERSION}/CPM.cmake
+         ${CPM_DOWNLOAD_LOCATION}
+         )
+endif ()
+
+include(${CPM_DOWNLOAD_LOCATION})
+
+############################
+### Development Settings ###
+############################
+add_library(ltb-dev-settings INTERFACE)
+target_compile_options(ltb-dev-settings
                        INTERFACE
                        # Strict warnings/errors with gcc and clang
                        $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wall>
@@ -37,13 +71,13 @@ target_compile_options(ltb-global-settings
                        $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/external:W0>
                        )
 
-macro(add_library)
-    _add_library(${ARGV})
-    if (NOT "${ARGV1}" STREQUAL "ALIAS")
-        target_link_libraries(${ARGV0} PRIVATE ${ltb-global-settings})
-    endif ()
-endmacro()
+set(LTB_BUILD_ALL_APPS ON)
 
-enable_testing()
+include(CTest)
 
-add_subdirectory(ltb-util LtbUtil)
+set(CPM_LtbCMake_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-cmake)
+set(CPM_LtbUtil_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-util)
+set(CPM_LtbGeom_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-geom)
+set(CPM_LtbApp_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-app-tmp)
+
+CPMAddPackage(NAME LtbGeom)

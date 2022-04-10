@@ -26,6 +26,7 @@ public:
     static auto get_validation_layers() -> util::Result<std::vector<vk::LayerProperties>>;
 
 private:
+    virtual auto init() -> void                                                         = 0;
     virtual auto update() -> void                                                       = 0;
     virtual auto render() -> void                                                       = 0;
     virtual auto resized() -> void                                                      = 0;

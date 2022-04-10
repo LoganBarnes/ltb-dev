@@ -57,6 +57,13 @@ CPMAddPackage("gh:ocornut/imgui@1.87")
 CPMAddPackage("gh:gabime/spdlog@1.9.2")
 CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.6.0")
 
+if (range-v3_ADDED)
+    target_include_directories(range-v3
+                               SYSTEM INTERFACE
+                               $<BUILD_INTERFACE:${range-v3_SOURCE_DIR}/include>
+                               )
+endif ()
+
 if (GLFW_ADDED)
     add_library(
             glfw::glfw
@@ -130,7 +137,7 @@ ltb_target_include_directories(
         PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/src>
 )
-target_compile_definitions(
+ltb_target_compile_definitions(
         ltb-app
         PUBLIC
         VULKAN_HPP_NO_EXCEPTIONS

@@ -28,7 +28,7 @@ GlfwVulkanImguiApp::~GlfwVulkanImguiApp() = default;
 auto GlfwVulkanImguiApp::init_window(ApplicationInitialization settings) -> util::Result<GlfwVulkanImguiApp*> {
 
     // Set the error callback before any GLFW calls so we see when things go wrong.
-    glfwSetErrorCallback([](int error, char const* description) { spdlog::error("ERROR: {}", description); });
+    glfwSetErrorCallback([](int /*error*/, char const* description) { spdlog::error("ERROR: {}", description); });
 
     glfw_ = std::shared_ptr<int>(new int(glfwInit()), [](auto* p) {
         spdlog::debug("Terminating GLFW");

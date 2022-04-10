@@ -10,7 +10,7 @@ set(GLOBAL_DEPENDS_NO_CYCLES ON)
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 
 # Set a cache dir for CPM so it doesn't download repos multiple times
-set(CPM_SOURCE_CACHE ${CMAKE_CURRENT_LIST_DIR}/build-deps)
+option(CPM_SOURCE_CACHE "The download location for external repos" ${CMAKE_CURRENT_LIST_DIR}/build-deps)
 
 #############################
 ### CMake Package Manager ###

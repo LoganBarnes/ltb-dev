@@ -80,4 +80,5 @@ set(CPM_LtbUtil_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-util)
 set(CPM_LtbGeom_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-geom)
 set(CPM_LtbApp_SOURCE ${CMAKE_CURRENT_LIST_DIR}/ltb-app-tmp)
 
+CPMAddPackage(NAME LtbUtil)
 CPMAddPackage(NAME LtbGeom)

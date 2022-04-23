@@ -111,44 +111,47 @@ if (imgui_ADDED)
 endif ()
 
 ##########################
-#### LtbApp::ltb-app ###
+#### LtbApp::LtbApp ###
 ##########################
 ltb_add_library(
-        ltb-app
-        ${CMAKE_CURRENT_LIST_DIR}/src/ltb/app/application_data.cpp
-        ${CMAKE_CURRENT_LIST_DIR}/src/ltb/app/fwd.cpp
-        ${CMAKE_CURRENT_LIST_DIR}/src/ltb/app/glfw_vulkan_imgui_app.cpp
+        LtbApp
+        src/application_data.cpp
+        src/fwd.cpp
+        src/glfw_vulkan_imgui_app.cpp
 )
 add_library(
-        LtbApp::ltb-app
+        LtbApp::LtbApp
         ALIAS
-        ltb-app
+        LtbApp
 )
 ltb_target_link_libraries(
-        ltb-app
+        LtbApp
         PUBLIC
-        LtbGeom::ltb-geom
+        LtbGeom::LtbGeom
         ImGui::imgui
         spdlog::spdlog
         range-v3::range-v3
 )
 ltb_target_include_directories(
-        ltb-app
+        LtbApp
         PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/include>
+        $<INSTALL_INTERFACE:include>
+        PRIVATE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/src>
 )
 ltb_target_compile_definitions(
-        ltb-app
+        LtbApp
         PUBLIC
         VULKAN_HPP_NO_EXCEPTIONS
 )
 ltb_target_compile_features(
-        ltb-app
+        LtbApp
         PRIVATE
         cxx_std_17
 )
 set_target_properties(
-        ltb-app
+        LtbApp
         PROPERTIES
         POSITION_INDEPENDENT_CODE ON
         WINDOWS_EXPORT_ALL_SYMBOLS ON

@@ -47,7 +47,6 @@ cmake -G"Ninja Multi-Config" -DCMAKE_BUILD_TYPE=Debug ..
 
 ### Windows
 
-
 ```powershell
 # From project root dir
 mkdir build
@@ -88,4 +87,24 @@ ctest -C Debug # Test Debug build
 ```bash
 ./_deps/ltb<lib>-build/Release/<executable> # Release executable
 ./_deps/ltb<lib>-build/Debug/<executable> # Debug executable
+```
+
+### Documentation
+
+[pipx](https://pypa.github.io/pipx/) for managing python dependencies (can also just use `pip`).
+
+```bash
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+```
+
+[Sphinx](https://www.sphinx-doc.org/en/master/) for building web pages from the documentation.
+
+```bash
+# The main Markdown to HTML generation tool
+pipx install sphinx
+# Add extensions and themes to sphinx
+pipx inject sphinx breathe myst-parser sphinxcontrib-mermaid furo exhale
+# Add a tool to enable hot reloading when editing docs
+pipx inject sphinx sphinx-autobuild --include-apps
 ```

@@ -1,9 +1,9 @@
 // ///////////////////////////////////////////////////////////////////////////////////////
 // Copyright (c) 2022 Logan Barnes - All Rights Reserved
 // ///////////////////////////////////////////////////////////////////////////////////////
-#include "glfw_vulkan_imgui_app.hpp"
+#include "ltb/app/glfw_vulkan_imgui_app.hpp"
 
-#include "application_data.hpp"
+#include "ltb/app/application_data.hpp"
 
 #include <GLFW/glfw3.h>
 #include <range/v3/range/conversion.hpp>

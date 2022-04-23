@@ -10,7 +10,7 @@ function(ltb_create_app target)
     ltb_target_link_libraries(
             ${target}
             PRIVATE
-            LtbApp::ltb-app
+            LtbApp::LtbApp
     )
     ltb_target_compile_features(
             ${target}

@@ -1,6 +1,6 @@
 [submodule "ltb-util"]
 	path = ltb-util
-	url = https://github.com/LoganBarnes/ltb-util.git
+	url = git@github.com:LoganBarnes/ltb-util.git
 [submodule "ltb-geom"]
 	path = ltb-geom
-	url = https://github.com/LoganBarnes/ltb-geom.git
+	url = https://github.com/LoganBarnes/ltb-util.git

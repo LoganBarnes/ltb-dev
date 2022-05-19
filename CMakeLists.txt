@@ -9,9 +9,6 @@ set(GLOBAL_DEPENDS_NO_CYCLES ON)
 # Prevent cmake from creating build artifacts in the source directory
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 
-# Set a cache dir for CPM so it doesn't download repos multiple times
-option(CPM_SOURCE_CACHE "The download location for external repos" ${CMAKE_CURRENT_LIST_DIR}/build-deps)
-
 #############################
 ### CMake Package Manager ###
 #############################
@@ -71,7 +68,8 @@ target_compile_options(ltb-dev-settings
                        $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/external:W0>
                        )
 
-set(LTB_BUILD_ALL_APPS ON)
+set(LTB_BUILD_ALL_APPS OFF)
+set(LTB_ENABLE_TESTING ON)
 
 include(CTest)
 

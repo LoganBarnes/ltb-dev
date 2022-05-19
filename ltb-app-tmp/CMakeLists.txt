@@ -43,6 +43,9 @@ CPMAddPackage(
         GITHUB_REPOSITORY ericniebler/range-v3
         GIT_TAG 0.11.0
         OPTIONS "RANGES_CXX_STD 17"
+        # It's header only and the CMakeLists.txt file
+        # adds global flags that break CUDA on windows
+        DOWNLOAD_ONLY TRUE
 )
 CPMAddPackage(
         NAME GLFW
@@ -55,9 +58,14 @@ CPMAddPackage(
 )
 CPMAddPackage("gh:ocornut/imgui@1.87")
 CPMAddPackage("gh:gabime/spdlog@1.9.2")
-CPMAddPackage("gh:TheLartians/PackageProject.cmake@1.6.0")
+
 
 if (range-v3_ADDED)
+    add_library(range-v3 INTERFACE)
+    add_library(range-v3::range-v3 ALIAS range-v3)
+
+    # Ignore errors from this third party library by marking the includes as
+    # system headers.
     target_include_directories(range-v3
                                SYSTEM INTERFACE
                                $<BUILD_INTERFACE:${range-v3_SOURCE_DIR}/include>
@@ -107,6 +115,12 @@ if (imgui_ADDED)
             SYSTEM PUBLIC
             $<BUILD_INTERFACE:${imgui_SOURCE_DIR}>
             $<BUILD_INTERFACE:${imgui_SOURCE_DIR}/backends>
+    )
+    target_compile_options(
+            imgui
+            PRIVATE
+            # Ignore build warning on this third-party code
+            $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-w>
     )
 endif ()
 

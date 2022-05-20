@@ -1,0 +1,26 @@
+
+.. _program_listing_file_ltb-app-tmp_include_ltb_app_fwd.hpp:
+
+Program Listing for File fwd.hpp
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-app-tmp_include_ltb_app_fwd.hpp>` (``ltb-app-tmp/include/ltb/app/fwd.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2022 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   struct GLFWwindow;
+   
+   namespace ltb::app {
+   
+   struct ApplicationInitialization;
+   struct ApplicationData;
+   class GlfwVulkanImguiApp;
+   
+   } // namespace ltb::app

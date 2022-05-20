@@ -1,0 +1,14 @@
+.. _exhale_enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268:
+
+Enum ApplicationUpdateMode
+==========================
+
+- Defined in :ref:`file_ltb-app-tmp_include_ltb_app_application_data.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ltb::app::ApplicationUpdateMode
+   :project: ltb

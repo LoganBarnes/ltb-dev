@@ -1,0 +1,17 @@
+.. _exhale_struct_structltb_1_1app_1_1ApplicationInitialization:
+
+Struct ApplicationInitialization
+================================
+
+- Defined in :ref:`file_ltb-app-tmp_include_ltb_app_application_data.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ltb::app::ApplicationInitialization
+   :project: ltb
+   :members:
+   :protected-members:
+   :undoc-members:

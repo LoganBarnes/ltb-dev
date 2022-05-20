@@ -1,0 +1,77 @@
+
+.. _file_ltb-app-tmp_include_ltb_app_application_data.hpp:
+
+File application_data.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-app-tmp_include_ltb_app>` (``ltb-app-tmp/include/ltb/app``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-app-tmp/include/ltb/app/application_data.hpp``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-app-tmp_include_ltb_app_application_data.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``glm/glm.hpp``
+
+- ``ltb/app/fwd.hpp`` (:ref:`file_ltb-app-tmp_include_ltb_app_fwd.hpp`)
+
+- ``ltb/util/duration.hpp``
+
+- ``string``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__app`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1app_1_1ApplicationData`
+
+- :ref:`exhale_struct_structltb_1_1app_1_1ApplicationInitialization`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268`
+
+- :ref:`exhale_enum_application__data_8hpp_1a6383f051ee39ec6f804474d70734241a`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_application__data_8hpp_1aa5f503bcc0491481d1241984727cafdd`
+

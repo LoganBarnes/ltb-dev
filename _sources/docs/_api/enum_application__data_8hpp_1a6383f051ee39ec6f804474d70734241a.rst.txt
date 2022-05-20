@@ -1,0 +1,14 @@
+.. _exhale_enum_application__data_8hpp_1a6383f051ee39ec6f804474d70734241a:
+
+Enum WindowType
+===============
+
+- Defined in :ref:`file_ltb-app-tmp_include_ltb_app_application_data.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ltb::app::WindowType
+   :project: ltb

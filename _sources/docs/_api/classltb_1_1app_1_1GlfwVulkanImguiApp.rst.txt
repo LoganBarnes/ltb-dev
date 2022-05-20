@@ -1,0 +1,17 @@
+.. _exhale_class_classltb_1_1app_1_1GlfwVulkanImguiApp:
+
+Class GlfwVulkanImguiApp
+========================
+
+- Defined in :ref:`file_ltb-app-tmp_include_ltb_app_glfw_vulkan_imgui_app.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ltb::app::GlfwVulkanImguiApp
+   :project: ltb
+   :members:
+   :protected-members:
+   :undoc-members:

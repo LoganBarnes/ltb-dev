@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class GlfwVulkanImguiApp &mdash; LTB Development 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Enum ApplicationUpdateMode" href="enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268.html" />
+    <link rel="prev" title="Struct ApplicationInitialization" href="structltb_1_1app_1_1ApplicationInitialization.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> LTB Development
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">APIs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1app_1_1ApplicationData.html">Struct ApplicationData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1app_1_1ApplicationInitialization.html">Struct ApplicationInitialization</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class GlfwVulkanImguiApp</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">LTB Development</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">APIs</a> &raquo;</li>
+      <li>Class GlfwVulkanImguiApp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/_api/classltb_1_1app_1_1GlfwVulkanImguiApp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-glfwvulkanimguiapp">
+<span id="exhale-class-classltb-1-1app-1-1glfwvulkanimguiapp"></span><h1>Class GlfwVulkanImguiApp<a class="headerlink" href="#class-glfwvulkanimguiapp" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_ltb-app-tmp_include_ltb_app_glfw_vulkan_imgui_app.hpp.html#file-ltb-app-tmp-include-ltb-app-glfw-vulkan-imgui-app-hpp"><span class="std std-ref">File glfw_vulkan_imgui_app.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiAppE">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiAppE"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiAppE"></span><span id="ltb::app::GlfwVulkanImguiApp"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">ltb</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GlfwVulkanImguiApp</span></span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiAppE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp18GlfwVulkanImguiAppEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp18GlfwVulkanImguiAppEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp18GlfwVulkanImguiAppEv"></span><span id="ltb::app::GlfwVulkanImguiApp::GlfwVulkanImguiApp"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1adc1e90d3f22d91f240b00dd6c9a466cf"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GlfwVulkanImguiApp</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp18GlfwVulkanImguiAppEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiAppD0Ev">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiAppD0Ev"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiAppD0Ev"></span><span id="ltb::app::GlfwVulkanImguiApp::~GlfwVulkanImguiApp"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1af82ae37a0353e35f76dd1c8365f61192"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~GlfwVulkanImguiApp</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiAppD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp11init_windowE25ApplicationInitialization">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp11init_windowE25ApplicationInitialization"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp11init_windowE25ApplicationInitialization"></span><span id="ltb::app::GlfwVulkanImguiApp::init_window__ApplicationInitialization"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1a98be1902a022bcf54b974f273d758f0e"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_window</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structltb_1_1app_1_1ApplicationInitialization.html#_CPPv4N3ltb3app25ApplicationInitializationE" title="ltb::app::ApplicationInitialization"><span class="n"><span class="pre">ApplicationInitialization</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">settings</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="n"><span class="pre">util</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Result</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3ltb3app18GlfwVulkanImguiAppE" title="ltb::app::GlfwVulkanImguiApp"><span class="n"><span class="pre">GlfwVulkanImguiApp</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp11init_windowE25ApplicationInitialization" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp11init_vulkanERKNSt6vectorIN2vk19ExtensionPropertiesEEE">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp11init_vulkanERKNSt6vectorIN2vk19ExtensionPropertiesEEE"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp11init_vulkanERKNSt6vectorIN2vk19ExtensionPropertiesEEE"></span><span id="ltb::app::GlfwVulkanImguiApp::init_vulkan__std::vector:vk::ExtensionProperties:CR"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1ab733ce20941b43b49d14b7760fadd597"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_vulkan</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vk</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ExtensionProperties</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">extensions</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="n"><span class="pre">util</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Result</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3ltb3app18GlfwVulkanImguiAppE" title="ltb::app::GlfwVulkanImguiApp"><span class="n"><span class="pre">GlfwVulkanImguiApp</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp11init_vulkanERKNSt6vectorIN2vk19ExtensionPropertiesEEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp3runEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp3runEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp3runEv"></span><span id="ltb::app::GlfwVulkanImguiApp::run"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1a7d3bcbffe734c379162cce70549c2ebe"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">run</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="n"><span class="pre">util</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Result</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3ltb3app18GlfwVulkanImguiAppE" title="ltb::app::GlfwVulkanImguiApp"><span class="n"><span class="pre">GlfwVulkanImguiApp</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp3runEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp6windowEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp6windowEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp6windowEv"></span><span id="ltb::app::GlfwVulkanImguiApp::window"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1afbd7c09d56faf34ea7a6f25ed868b60d"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">window</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="n"><span class="pre">GLFWwindow</span></span><span class="p"><span class="pre">*</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp6windowEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3ltb3app18GlfwVulkanImguiApp8app_dataEv">
+<span id="_CPPv3NK3ltb3app18GlfwVulkanImguiApp8app_dataEv"></span><span id="_CPPv2NK3ltb3app18GlfwVulkanImguiApp8app_dataEv"></span><span id="ltb::app::GlfwVulkanImguiApp::app_dataC"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1afbfe9705cf141df703f3a41b90669a16"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><a class="reference internal" href="structltb_1_1app_1_1ApplicationData.html#_CPPv4N3ltb3app15ApplicationDataE" title="ltb::app::ApplicationData"><span class="n"><span class="pre">ApplicationData</span></span></a><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="p"><span class="pre">&amp;</span></span><a class="headerlink" href="#_CPPv4NK3ltb3app18GlfwVulkanImguiApp8app_dataEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp8app_dataEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp8app_dataEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp8app_dataEv"></span><span id="ltb::app::GlfwVulkanImguiApp::app_data"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1afaaca5b5d702735dcd95f4ef2bfa46bb"></span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><a class="reference internal" href="structltb_1_1app_1_1ApplicationData.html#_CPPv4N3ltb3app15ApplicationDataE" title="ltb::app::ApplicationData"><span class="n"><span class="pre">ApplicationData</span></span></a><span class="p"><span class="pre">&amp;</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp8app_dataEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp12force_redrawEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp12force_redrawEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp12force_redrawEv"></span><span id="ltb::app::GlfwVulkanImguiApp::force_redraw"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1a1e5a64249abefaba5b4585298ebf3d7c"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">force_redraw</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp12force_redrawEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp14get_extensionsEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp14get_extensionsEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp14get_extensionsEv"></span><span id="ltb::app::GlfwVulkanImguiApp::get_extensions"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1a37a335a200e45c42b3699d81de0b05a0"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_extensions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="n"><span class="pre">util</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Result</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vk</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ExtensionProperties</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp14get_extensionsEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb3app18GlfwVulkanImguiApp21get_validation_layersEv">
+<span id="_CPPv3N3ltb3app18GlfwVulkanImguiApp21get_validation_layersEv"></span><span id="_CPPv2N3ltb3app18GlfwVulkanImguiApp21get_validation_layersEv"></span><span id="ltb::app::GlfwVulkanImguiApp::get_validation_layers"></span><span class="target" id="classltb_1_1app_1_1GlfwVulkanImguiApp_1a569e100c9ed4b2a63a36903782afefd9"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_validation_layers</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><span class="n"><span class="pre">util</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Result</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vk</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">LayerProperties</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N3ltb3app18GlfwVulkanImguiApp21get_validation_layersEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="structltb_1_1app_1_1ApplicationInitialization.html" class="btn btn-neutral float-left" title="Struct ApplicationInitialization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268.html" class="btn btn-neutral float-right" title="Enum ApplicationUpdateMode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Logan Barnes.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

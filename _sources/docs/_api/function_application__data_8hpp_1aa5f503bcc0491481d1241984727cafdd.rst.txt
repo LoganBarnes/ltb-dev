@@ -1,0 +1,14 @@
+.. _exhale_function_application__data_8hpp_1aa5f503bcc0491481d1241984727cafdd:
+
+Function ltb::app::samples_with_monitor_scale
+=============================================
+
+- Defined in :ref:`file_ltb-app-tmp_include_ltb_app_application_data.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::app::samples_with_monitor_scale(int, glm::vec2 const&)
+   :project: ltb

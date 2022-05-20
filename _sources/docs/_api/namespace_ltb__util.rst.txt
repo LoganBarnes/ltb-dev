@@ -109,9 +109,9 @@ Functions
 
 - :ref:`exhale_function_error_8hpp_1a7055aabbd4527dd15dcbe8173fd18f85`
 
-- :ref:`exhale_function_enum__flags_8hpp_1ace9d9c2d1186023e85c0027c1d61ed0a`
-
 - :ref:`exhale_function_enum__flags_8hpp_1a15f576191f2fd84b9592b5920431609e`
+
+- :ref:`exhale_function_enum__flags_8hpp_1ace9d9c2d1186023e85c0027c1d61ed0a`
 
 - :ref:`exhale_function_generic__guard_8hpp_1a7b1022b9614fa5cc8183d01ad4d54138`
 
@@ -125,11 +125,11 @@ Functions
 
 - :ref:`exhale_function_uuid_8hpp_1abd43eb60e97059e0ac5b954037a4f29f`
 
-- :ref:`exhale_function_enum__flags_8hpp_1a2a859d08733d6c184b0d5e71f8537b5f`
-
 - :ref:`exhale_function_uuid_8hpp_1a943f3e17d9ca8725c46cce92cf521003`
 
 - :ref:`exhale_function_uuid_8hpp_1ac7fdad69be16f242da3d626fa041f9ae`
+
+- :ref:`exhale_function_enum__flags_8hpp_1a2a859d08733d6c184b0d5e71f8537b5f`
 
 - :ref:`exhale_function_file__utils_8hpp_1a75098343c18d85c61004e8564e0f6a43`
 
@@ -169,9 +169,9 @@ Functions
 
 - :ref:`exhale_function_enum__flags_8hpp_1a7866d8d0268e0f3f3eec7acea65d1da3`
 
-- :ref:`exhale_function_enum__bits_8hpp_1a42777620d0f863f10cb73788d10b3222`
-
 - :ref:`exhale_function_enum__flags_8hpp_1ae99818b648bb825b26a7b2713f93618e`
+
+- :ref:`exhale_function_enum__bits_8hpp_1a42777620d0f863f10cb73788d10b3222`
 
 - :ref:`exhale_function_type__string_8hpp_1a8064856a3698f5b28a8ed50b3cfca5a3`
 

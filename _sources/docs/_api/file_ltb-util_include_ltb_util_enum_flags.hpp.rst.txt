@@ -102,17 +102,17 @@ Functions
 
 - :ref:`exhale_function_enum__flags_8hpp_1a17d32942c064f72e3c3b56ba7e59e559`
 
-- :ref:`exhale_function_enum__flags_8hpp_1a41e0d12346f12df22b49563936fb7800`
-
 - :ref:`exhale_function_enum__flags_8hpp_1ac50cdd7cdc2b9366c01657a9d18f67d4`
+
+- :ref:`exhale_function_enum__flags_8hpp_1a41e0d12346f12df22b49563936fb7800`
 
 - :ref:`exhale_function_enum__flags_8hpp_1af80fc65d548595720d22e1009c64ebc4`
 
 - :ref:`exhale_function_enum__flags_8hpp_1ade01c38007e4408278abb06adad7df12`
 
-- :ref:`exhale_function_enum__flags_8hpp_1ace9d9c2d1186023e85c0027c1d61ed0a`
-
 - :ref:`exhale_function_enum__flags_8hpp_1a15f576191f2fd84b9592b5920431609e`
+
+- :ref:`exhale_function_enum__flags_8hpp_1ace9d9c2d1186023e85c0027c1d61ed0a`
 
 - :ref:`exhale_function_enum__flags_8hpp_1aa1bfd78ec1b8e85c16f347553e605aa2`
 

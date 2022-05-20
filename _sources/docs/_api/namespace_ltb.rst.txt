@@ -18,3 +18,5 @@ Namespaces
 
 
 - :ref:`namespace_ltb__app`
+
+- :ref:`namespace_ltb__util`

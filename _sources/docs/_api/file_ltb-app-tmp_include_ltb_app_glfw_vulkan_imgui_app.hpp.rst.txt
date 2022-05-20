@@ -31,7 +31,7 @@ Includes
 
 - ``fwd.hpp`` (:ref:`file_ltb-app-tmp_include_ltb_app_fwd.hpp`)
 
-- ``ltb/util/result.hpp``
+- ``ltb/util/result.hpp`` (:ref:`file_ltb-util_include_ltb_util_result.hpp`)
 
 - ``vulkan/vulkan.hpp``
 

@@ -33,9 +33,9 @@ Includes
 
 - ``ltb/app/fwd.hpp`` (:ref:`file_ltb-app-tmp_include_ltb_app_fwd.hpp`)
 
-- ``ltb/util/duration.hpp``
+- ``ltb/util/duration.hpp`` (:ref:`file_ltb-util_include_ltb_util_duration.hpp`)
 
-- ``string``
+- ``string`` (:ref:`file_ltb-util_include_ltb_util_string.hpp`)
 
 
 

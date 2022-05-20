@@ -1,0 +1,84 @@
+
+.. _file_ltb-geom_include_ltb_geom_ray.hpp:
+
+File ray.hpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/ray.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_ray.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``type_traits``
+
+- ``vec.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_vec.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_2d.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_3d.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+- :ref:`namespace_ltb__geom__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1detail_1_1Ray`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f`
+
+- :ref:`exhale_typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961`
+
+- :ref:`exhale_typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c`
+
+- :ref:`exhale_typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb`
+
+- :ref:`exhale_typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3`
+
+- :ref:`exhale_typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143`
+
+- :ref:`exhale_typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456`
+

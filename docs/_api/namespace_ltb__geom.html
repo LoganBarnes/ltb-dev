@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namespace ltb::geom &mdash; LTB Development 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Namespace ltb::geom::detail" href="namespace_ltb__geom__detail.html" />
+    <link rel="prev" title="Namespace ltb::app" href="namespace_ltb__app.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> LTB Development
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html">LTB Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-geom/README.html">ltb-geom</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">APIs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb.html">Namespace ltb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__app.html">Namespace ltb::app</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Namespace ltb::geom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__geom__detail.html">Namespace ltb::geom::detail</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__util.html">Namespace ltb::util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__util__detail.html">Namespace ltb::util::detail</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__util__flag_operators.html">Namespace ltb::util::flag_operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std.html">Namespace std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_tl.html">Namespace tl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">LTB Development</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">APIs</a> &raquo;</li>
+      <li>Namespace ltb::geom</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/_api/namespace_ltb__geom.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="namespace-ltb-geom">
+<span id="id1"></span><h1>Namespace ltb::geom<a class="headerlink" href="#namespace-ltb-geom" title="Permalink to this headline"></a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#namespaces" id="id2">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id3">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id4">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id5">Functions</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id6">Typedefs</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id7">Variables</a></p></li>
+</ul>
+</div>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_ltb__geom__detail.html#namespace-ltb-geom-detail"><span class="std std-ref">Namespace ltb::geom::detail</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Ball.html#exhale-struct-structltb-1-1geom-1-1ball"><span class="std std-ref">Template Struct Ball</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Box.html#exhale-struct-structltb-1-1geom-1-1box"><span class="std std-ref">Template Struct Box</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Capsule.html#exhale-struct-structltb-1-1geom-1-1capsule"><span class="std std-ref">Template Struct Capsule</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Interpolator.html#exhale-struct-structltb-1-1geom-1-1interpolator"><span class="std std-ref">Template Struct Interpolator</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html#exhale-struct-structltb-1-1geom-1-1interpolator-3-012-00-01t-01-4"><span class="std std-ref">Template Struct Interpolator&lt; 2, T &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4.html#exhale-struct-structltb-1-1geom-1-1interpolator-3-013-00-01t-01-4"><span class="std std-ref">Template Struct Interpolator&lt; 3, T &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Mesh.html#exhale-struct-structltb-1-1geom-1-1mesh"><span class="std std-ref">Template Struct Mesh</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1MeshAndTransform.html#exhale-struct-structltb-1-1geom-1-1meshandtransform"><span class="std std-ref">Template Struct MeshAndTransform</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Polygon.html#exhale-struct-structltb-1-1geom-1-1polygon"><span class="std std-ref">Template Struct Polygon</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Range.html#exhale-struct-structltb-1-1geom-1-1range"><span class="std std-ref">Template Struct Range</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Shape.html#exhale-struct-structltb-1-1geom-1-1shape"><span class="std std-ref">Template Struct Shape</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4.html#exhale-struct-structltb-1-1geom-1-1shape-3-01s-3-01l-00-01t-01-4-01-4"><span class="std std-ref">Template Struct Shape&lt; S&lt; L, T &gt; &gt;</span></a></p></li>
+<li><p><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4.html#exhale-struct-structltb-1-1geom-1-1shape-3-01s-3-01l-00-01t-00-01q-01-4-01-4"><span class="std std-ref">Template Struct Shape&lt; S&lt; L, T, Q &gt; &gt;</span></a></p></li>
+</ul>
+</section>
+<section id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html#exhale-enum-interpolator-2d-8hpp-1a8706f656c70d55621e85cd5f17c4a86d"><span class="std std-ref">Enum Corner2d</span></a></p></li>
+<li><p><a class="reference internal" href="enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566.html#exhale-enum-interpolator-3d-8hpp-1aac391e403032802123085d33f2058566"><span class="std std-ref">Enum Corner3d</span></a></p></li>
+<li><p><a class="reference internal" href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html#exhale-enum-mesh-8hpp-1a436d3e870e69cfb98fef0e655a8580d8"><span class="std std-ref">Enum GeometryFormat</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_ltb-geom_2include_2ltb_2geom_2comparison__utils_8hpp_1aaf8192c9a91f2b07fda08fc454d8ec8c.html#exhale-function-ltb-geom-2include-2ltb-2geom-2comparison-utils-8hpp-1aaf8192c9a91f2b07fda08fc454d8ec8c"><span class="std std-ref">Template Function ltb::geom::almost_equal</span></a></p></li>
+<li><p><a class="reference internal" href="function_axes__mesh_8hpp_1a47f1ab482dc23edc6de4ef95b0f6378d.html#exhale-function-axes-mesh-8hpp-1a47f1ab482dc23edc6de4ef95b0f6378d"><span class="std std-ref">Template Function ltb::geom::axes_mesh</span></a></p></li>
+<li><p><a class="reference internal" href="function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951.html#exhale-function-box-8hpp-1a580df393ef9bd6d808687b71cd8fb951"><span class="std std-ref">Template Function ltb::geom::center</span></a></p></li>
+<li><p><a class="reference internal" href="function_range_8hpp_1a7c30d0fb0bcbf9741d84401e6bab1117.html#exhale-function-range-8hpp-1a7c30d0fb0bcbf9741d84401e6bab1117"><span class="std std-ref">Template Function ltb::geom::contains</span></a></p></li>
+<li><p><a class="reference internal" href="function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273.html#exhale-function-cube-mesh-8hpp-1afd7fd76e9629ea10b9dab86a65897273"><span class="std std-ref">Template Function ltb::geom::cube_mesh</span></a></p></li>
+<li><p><a class="reference internal" href="function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74.html#exhale-function-range-8hpp-1ad1f7933af03340e55515a4d0bb97ca74"><span class="std std-ref">Template Function ltb::geom::dimensions(Range&lt;T&gt; const&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8.html#exhale-function-box-8hpp-1a527d41cfbc73e9c4633a2b8e0997aaa8"><span class="std std-ref">Template Function ltb::geom::dimensions(Box&lt;L, T&gt; const&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e.html#exhale-function-disc-mesh-8hpp-1a10c6be2c992addef20d7b6457214fa0e"><span class="std std-ref">Template Function ltb::geom::disc_mesh</span></a></p></li>
+<li><p><a class="reference internal" href="function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42.html#exhale-function-icosphere-mesh-8hpp-1a3b35dbc3ad356eaa3d27bb9b68900e42"><span class="std std-ref">Template Function ltb::geom::icosphere_mesh</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c.html#exhale-function-vec-8hpp-1aae02beb069ae6cd02d00ca7c398f874c"><span class="std std-ref">Template Function ltb::geom::identity_mat</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef.html#exhale-function-vec-8hpp-1a48c55bbff14a7c0b18b52e2cb2b81bef"><span class="std std-ref">Template Function ltb::geom::inf</span></a></p></li>
+<li><p><a class="reference internal" href="function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af.html#exhale-function-mesh-8hpp-1a0e58be585f02e4adc5e76c510a72b7af"><span class="std std-ref">Function ltb::geom::is_triangle_format</span></a></p></li>
+<li><p><a class="reference internal" href="function_solvers_8hpp_1a81fbe6d63292a8975b7884a82a63dfe4.html#exhale-function-solvers-8hpp-1a81fbe6d63292a8975b7884a82a63dfe4"><span class="std std-ref">Template Function ltb::geom::is_zero</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd.html#exhale-function-vec-8hpp-1ad5a8c2f738d8e2e1ff229720917b9ebd"><span class="std std-ref">Template Function ltb::geom::make_zeroed_vec(T)</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf.html#exhale-function-vec-8hpp-1a1739a6b3051792a716e5c5ccf37881cf"><span class="std std-ref">Template Function ltb::geom::make_zeroed_vec(T, T)</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad.html#exhale-function-vec-8hpp-1acf8acd3d390c692ad2351a532b24baad"><span class="std std-ref">Template Function ltb::geom::make_zeroed_vec(T, T, T)</span></a></p></li>
+<li><p><a class="reference internal" href="function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7.html#exhale-function-transform-8hpp-1a9b8799aa4791679e62a2fc19474b78d7"><span class="std std-ref">Function ltb::geom::normals_matrix</span></a></p></li>
+<li><p><a class="reference internal" href="function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79.html#exhale-function-mesh-8hpp-1a57e481d4bab7ca27405edccda3f70d79"><span class="std std-ref">Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, GeometryFormat const&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea.html#exhale-function-io-8hpp-1ac240c2e7a2f6c8f171298b4b8039f7ea"><span class="std std-ref">Template Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, Ball&lt;L, T&gt; const&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad.html#exhale-function-io-8hpp-1a579d76487a109f930ad3a4047bc420ad"><span class="std std-ref">Template Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, Box&lt;L, T&gt; const&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578.html#exhale-function-mesh-8hpp-1a8fbadf2a256382a2c6ff52cd09e92578"><span class="std std-ref">Template Function ltb::geom::operator==</span></a></p></li>
+<li><p><a class="reference internal" href="function_io_8hpp_1a6c0ede59af1868e21977241ea39bcb20.html#exhale-function-io-8hpp-1a6c0ede59af1868e21977241ea39bcb20"><span class="std std-ref">Template Function ltb::geom::operator&gt;&gt;(std::istream&amp;, Ball&lt;L, T&gt;&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_io_8hpp_1a3502cb8184ae89c5b831fb5a116d43b0.html#exhale-function-io-8hpp-1a3502cb8184ae89c5b831fb5a116d43b0"><span class="std std-ref">Template Function ltb::geom::operator&gt;&gt;(std::istream&amp;, Box&lt;L, T&gt;&amp;)</span></a></p></li>
+<li><p><a class="reference internal" href="function_plane__mesh_8hpp_1a2527abee8ff7b49900bf39e0c7119bfc.html#exhale-function-plane-mesh-8hpp-1a2527abee8ff7b49900bf39e0c7119bfc"><span class="std std-ref">Template Function ltb::geom::plane_mesh</span></a></p></li>
+<li><p><a class="reference internal" href="function_solvers_8hpp_1a2d8eb0d0ac63a932f45dd4a16dfa3cf8.html#exhale-function-solvers-8hpp-1a2d8eb0d0ac63a932f45dd4a16dfa3cf8"><span class="std std-ref">Template Function ltb::geom::solve_cubic</span></a></p></li>
+<li><p><a class="reference internal" href="function_solvers_8hpp_1aaa5d4e4ea678305236c87638c0f5e48a.html#exhale-function-solvers-8hpp-1aaa5d4e4ea678305236c87638c0f5e48a"><span class="std std-ref">Template Function ltb::geom::solve_quadratic</span></a></p></li>
+<li><p><a class="reference internal" href="function_mesh_8hpp_1a0dbe34bfbd71a492dbb2bfc73f890a7b.html#exhale-function-mesh-8hpp-1a0dbe34bfbd71a492dbb2bfc73f890a7b"><span class="std std-ref">Template Function ltb::geom::transform</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701.html#exhale-function-vec-8hpp-1a6a50fd874441c8b757f98121e654a701"><span class="std std-ref">Template Function ltb::geom::transform_point</span></a></p></li>
+<li><p><a class="reference internal" href="function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e.html#exhale-function-vec-8hpp-1a59ad7a06c564f6999ec47970f31b806e"><span class="std std-ref">Template Function ltb::geom::transform_vector</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1adc8937a13588f73b208815c3589e4047"><span class="std std-ref">Typedef ltb::geom::Ball2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1abeb856afc346b3efe0449e37a4fa1e40"><span class="std std-ref">Typedef ltb::geom::Ball3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1aff42cc8b7d4583307f46643c1ac6eef1"><span class="std std-ref">Typedef ltb::geom::Box2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1aa3cd2638da82692ed0edab51b58c069c"><span class="std std-ref">Typedef ltb::geom::Box3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1ac98256bf316a1256086c3e5785eba636"><span class="std std-ref">Typedef ltb::geom::Capsule2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1aff7f2f66f22c2bd3b56732a81747d63e"><span class="std std-ref">Typedef ltb::geom::Capsule3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a179db2bb3e99ac9b8f587a74fddc8666"><span class="std std-ref">Typedef ltb::geom::DBall2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a111d8439877bc311ebeb6e2bff45cebb"><span class="std std-ref">Typedef ltb::geom::DBall3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a32f331eefdb3921f5532a30681e9af5c"><span class="std std-ref">Typedef ltb::geom::DBox2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a26604a1a75d9a9f6aa7f39f5c0c244cc"><span class="std std-ref">Typedef ltb::geom::DBox3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a58e0eb9d257a46a4e9bbf8cc06b4b156"><span class="std std-ref">Typedef ltb::geom::DCapsule2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a9bd5db34d3089f81b1e69f4e4c34726a"><span class="std std-ref">Typedef ltb::geom::DCapsule3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20.html#exhale-typedef-mesh-8hpp-1a88e5ea4641ae694403b303c15b66df20"><span class="std std-ref">Typedef ltb::geom::dMesh2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669.html#exhale-typedef-mesh-8hpp-1a8181bae329e5869e804bfd4b794ba669"><span class="std std-ref">Typedef ltb::geom::dMesh2AndTransform</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa.html#exhale-typedef-mesh-8hpp-1a0e7fa34deaaf1295784415a4e29991aa"><span class="std std-ref">Typedef ltb::geom::dMesh3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55.html#exhale-typedef-mesh-8hpp-1a1ac597b522172c82bae2bb31e4a92f55"><span class="std std-ref">Typedef ltb::geom::dMesh3AndTransform</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a6b197fc088ee5ee0385f757aa8822a2d"><span class="std std-ref">Typedef ltb::geom::DPolygon2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f.html#exhale-typedef-ray-8hpp-1afd8484adf4ff24aaf146a1087f76c05f"><span class="std std-ref">Typedef ltb::geom::DRay2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961.html#exhale-typedef-ray-8hpp-1a26f709f5ce28b151d495c4de8c180961"><span class="std std-ref">Typedef ltb::geom::DRay3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86.html#exhale-typedef-mesh-8hpp-1a3c804db5b43d97a93ced069f75186a86"><span class="std std-ref">Typedef ltb::geom::Mesh2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65.html#exhale-typedef-mesh-8hpp-1a861a62015e35ff32da6ee9a77d35aa65"><span class="std std-ref">Typedef ltb::geom::Mesh2AndTransform</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15.html#exhale-typedef-mesh-8hpp-1abd3142f120f7d1dddc491c900f02ee15"><span class="std std-ref">Typedef ltb::geom::Mesh3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b.html#exhale-typedef-mesh-8hpp-1ae2d9c809388a675160aeb197778eda2b"><span class="std std-ref">Typedef ltb::geom::Mesh3AndTransform</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d.html#exhale-typedef-ltb-geom-2include-2ltb-2geom-2shapes-2fwd-8hpp-1a156a11affc798edda9c4e3b8b65ff98d"><span class="std std-ref">Typedef ltb::geom::Polygon2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b.html#exhale-typedef-range-8hpp-1a3aedf1d6045047f80cadfe3dde0f9c4b"><span class="std std-ref">Typedef ltb::geom::Range2D</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_range_8hpp_1a2ecad0a888dc52543d9c8b94a1b35e2c.html#exhale-typedef-range-8hpp-1a2ecad0a888dc52543d9c8b94a1b35e2c"><span class="std std-ref">Typedef ltb::geom::Range2Di</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html#exhale-typedef-ray-8hpp-1a2efb606b236749aea4e3ff338425586c"><span class="std std-ref">Typedef ltb::geom::Ray</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb.html#exhale-typedef-ray-8hpp-1aa0741e880c65e966f35baa8f5b4d85fb"><span class="std std-ref">Typedef ltb::geom::Ray2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html#exhale-typedef-ray-8hpp-1a69ad44728984b04090ed67efb112c1f3"><span class="std std-ref">Typedef ltb::geom::Ray3</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a.html#exhale-typedef-shape-info-8hpp-1a549d285f2c022ea02131f40552808e6a"><span class="std std-ref">Typedef ltb::geom::shape_type_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143.html#exhale-typedef-ray-8hpp-1a55b6230786e9de1f52de912f7177b143"><span class="std std-ref">Typedef ltb::geom::TRay2</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456.html#exhale-typedef-ray-8hpp-1ad609ed0fb9031f1fd0346bfbbaa5d456"><span class="std std-ref">Typedef ltb::geom::TRay3</span></a></p></li>
+</ul>
+</section>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c.html#exhale-variable-shape-info-8hpp-1a95e46a1e75734c19636c2bca21c4341c"><span class="std std-ref">Variable ltb::geom::shape_dimensions_v</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="namespace_ltb__app.html" class="btn btn-neutral float-left" title="Namespace ltb::app" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="namespace_ltb__geom__detail.html" class="btn btn-neutral float-right" title="Namespace ltb::geom::detail" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Logan Barnes.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

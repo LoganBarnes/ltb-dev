@@ -1,0 +1,20 @@
+
+.. _namespace_ltb__geom__detail:
+
+Namespace ltb::geom::detail
+===========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1detail_1_1Ray`

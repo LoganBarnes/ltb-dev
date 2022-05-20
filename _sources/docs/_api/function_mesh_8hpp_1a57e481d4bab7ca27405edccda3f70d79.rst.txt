@@ -1,0 +1,14 @@
+.. _exhale_function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79:
+
+Function ltb::geom::operator<<(std::ostream&, GeometryFormat const&)
+====================================================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::operator<<(std::ostream&, GeometryFormat const&)
+   :project: ltb

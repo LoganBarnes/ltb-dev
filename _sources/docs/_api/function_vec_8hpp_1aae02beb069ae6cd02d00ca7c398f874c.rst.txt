@@ -1,0 +1,14 @@
+.. _exhale_function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c:
+
+Template Function ltb::geom::identity_mat
+=========================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_vec.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::identity_mat()
+   :project: ltb

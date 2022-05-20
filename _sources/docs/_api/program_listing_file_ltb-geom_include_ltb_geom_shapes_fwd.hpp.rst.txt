@@ -1,0 +1,54 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_shapes_fwd.hpp:
+
+Program Listing for File fwd.hpp
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_shapes_fwd.hpp>` (``ltb-geom/include/ltb/geom/shapes/fwd.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   
+   // external
+   #include <glm/fwd.hpp>
+   
+   namespace ltb::geom {
+   
+   template <glm::length_t L, typename T>
+   struct Ball;
+   
+   using Ball2  = Ball<2, float>;
+   using Ball3  = Ball<3, float>;
+   using DBall2 = Ball<2, double>;
+   using DBall3 = Ball<3, double>;
+   
+   template <glm::length_t L, typename T>
+   struct Box;
+   
+   using Box2  = Box<2, float>;
+   using Box3  = Box<3, float>;
+   using DBox2 = Box<2, double>;
+   using DBox3 = Box<3, double>;
+   
+   template <glm::length_t L, typename T>
+   struct Capsule;
+   
+   using Capsule2  = Capsule<2, float>;
+   using Capsule3  = Capsule<3, float>;
+   using DCapsule2 = Capsule<2, double>;
+   using DCapsule3 = Capsule<3, double>;
+   
+   template <glm::length_t L, typename T>
+   struct Polygon;
+   
+   using Polygon2  = Polygon<2, float>;
+   using DPolygon2 = Polygon<2, double>;
+   
+   } // namespace ltb::geom

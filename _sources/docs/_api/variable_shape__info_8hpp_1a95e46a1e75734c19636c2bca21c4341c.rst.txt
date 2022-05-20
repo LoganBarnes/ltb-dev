@@ -1,0 +1,14 @@
+.. _exhale_variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c:
+
+Variable ltb::geom::shape_dimensions_v
+======================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ltb::geom::shape_dimensions_v
+   :project: ltb

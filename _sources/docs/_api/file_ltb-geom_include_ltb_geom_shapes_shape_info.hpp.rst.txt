@@ -1,0 +1,71 @@
+
+.. _file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp:
+
+File shape_info.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom_shapes>` (``ltb-geom/include/ltb/geom/shapes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/shapes/shape_info.hpp``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fwd.hpp`` (:ref:`file_ltb-app-tmp_include_ltb_app_fwd.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Shape`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c`
+

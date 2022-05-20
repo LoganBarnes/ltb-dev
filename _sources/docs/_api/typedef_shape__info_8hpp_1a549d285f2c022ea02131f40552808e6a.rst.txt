@@ -1,0 +1,14 @@
+.. _exhale_typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a:
+
+Typedef ltb::geom::shape_type_t
+===============================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::shape_type_t
+   :project: ltb

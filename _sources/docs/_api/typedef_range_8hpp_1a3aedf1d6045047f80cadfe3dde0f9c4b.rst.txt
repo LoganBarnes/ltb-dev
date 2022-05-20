@@ -1,0 +1,14 @@
+.. _exhale_typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b:
+
+Typedef ltb::geom::Range2D
+==========================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_range.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::Range2D
+   :project: ltb

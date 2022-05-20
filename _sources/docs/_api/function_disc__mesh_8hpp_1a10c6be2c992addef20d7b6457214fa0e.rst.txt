@@ -1,0 +1,14 @@
+.. _exhale_function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e:
+
+Template Function ltb::geom::disc_mesh
+======================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_disc_mesh.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::disc_mesh(unsigned, unsigned)
+   :project: ltb

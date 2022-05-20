@@ -1,0 +1,104 @@
+
+.. _file_ltb-geom_include_ltb_geom_shapes_fwd.hpp:
+
+File fwd.hpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom_shapes>` (``ltb-geom/include/ltb/geom/shapes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/shapes/fwd.hpp``)
+---------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_shapes_fwd.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``glm/fwd.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_ball.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_box.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_io.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Ball`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Box`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Capsule`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Polygon`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d`
+

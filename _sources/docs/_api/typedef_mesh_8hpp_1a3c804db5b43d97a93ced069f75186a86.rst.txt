@@ -1,0 +1,14 @@
+.. _exhale_typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86:
+
+Typedef ltb::geom::Mesh2
+========================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::Mesh2
+   :project: ltb

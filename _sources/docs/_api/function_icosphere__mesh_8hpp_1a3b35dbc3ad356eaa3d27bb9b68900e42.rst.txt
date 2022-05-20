@@ -1,0 +1,14 @@
+.. _exhale_function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42:
+
+Template Function ltb::geom::icosphere_mesh
+===========================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_icosphere_mesh.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::icosphere_mesh(unsigned)
+   :project: ltb

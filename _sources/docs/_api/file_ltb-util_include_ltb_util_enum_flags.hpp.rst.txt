@@ -102,9 +102,9 @@ Functions
 
 - :ref:`exhale_function_enum__flags_8hpp_1a17d32942c064f72e3c3b56ba7e59e559`
 
-- :ref:`exhale_function_enum__flags_8hpp_1ac50cdd7cdc2b9366c01657a9d18f67d4`
-
 - :ref:`exhale_function_enum__flags_8hpp_1a41e0d12346f12df22b49563936fb7800`
+
+- :ref:`exhale_function_enum__flags_8hpp_1ac50cdd7cdc2b9366c01657a9d18f67d4`
 
 - :ref:`exhale_function_enum__flags_8hpp_1af80fc65d548595720d22e1009c64ebc4`
 

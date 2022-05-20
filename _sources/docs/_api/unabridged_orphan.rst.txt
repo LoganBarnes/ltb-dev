@@ -31,6 +31,36 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ltb-geom.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ltb-geom_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ltb-geom_include_ltb.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ltb-geom_include_ltb_geom.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ltb-geom_include_ltb_geom_shapes.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ltb-geom_include_ltb_geom_shapes_meshes.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ltb-util.rst
 
 .. toctree::
@@ -70,7 +100,32 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ltb-geom_include_ltb_geom_shapes_meshes_axes_mesh.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_ball.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ltb-util_include_ltb_util_blocking_queue.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_box.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_capsule.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_comparison_utils.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -81,6 +136,16 @@ Files
    :maxdepth: 5
 
    file_ltb-util_include_ltb_util_container_utils.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_meshes_cube_mesh.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_meshes_disc_mesh.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -120,6 +185,16 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ltb-geom_include_ltb_geom_fwd.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_fwd.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ltb-util_include_ltb_util_generic_guard.hpp.rst
 
 .. toctree::
@@ -135,7 +210,47 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ltb-geom_include_ltb_geom_shapes_meshes_icosphere_mesh.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ltb-util_include_ltb_util_ignore.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_interpolator.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_interpolator_2d.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_interpolator_3d.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_io.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_mesh.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_meshes_plane_mesh.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_polygon.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -150,7 +265,27 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ltb-geom_include_ltb_geom_range.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_ray.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ltb-util_include_ltb_util_result.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_solvers.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -161,6 +296,11 @@ Files
    :maxdepth: 5
 
    file_ltb-util_include_ltb_util_timer.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_transform.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -176,3 +316,8 @@ Files
    :maxdepth: 5
 
    file_ltb-util_include_ltb_util_variant_utils.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ltb-geom_include_ltb_geom_vec.hpp.rst

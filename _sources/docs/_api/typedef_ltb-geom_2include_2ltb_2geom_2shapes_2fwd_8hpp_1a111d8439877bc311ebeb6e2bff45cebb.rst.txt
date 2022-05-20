@@ -1,0 +1,14 @@
+.. _exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb:
+
+Typedef ltb::geom::DBall3
+=========================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_fwd.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::DBall3
+   :project: ltb

@@ -1,0 +1,17 @@
+.. _exhale_struct_structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4:
+
+Template Struct Interpolator< 3, T >
+====================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_interpolator_3d.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ltb::geom::Interpolator< 3, T >
+   :project: ltb
+   :members:
+   :protected-members:
+   :undoc-members:

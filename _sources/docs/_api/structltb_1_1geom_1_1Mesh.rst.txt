@@ -1,0 +1,17 @@
+.. _exhale_struct_structltb_1_1geom_1_1Mesh:
+
+Template Struct Mesh
+====================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ltb::geom::Mesh
+   :project: ltb
+   :members:
+   :protected-members:
+   :undoc-members:

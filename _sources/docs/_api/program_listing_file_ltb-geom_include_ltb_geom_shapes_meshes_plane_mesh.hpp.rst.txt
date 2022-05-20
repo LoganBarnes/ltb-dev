@@ -1,0 +1,26 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_shapes_meshes_plane_mesh.hpp:
+
+Program Listing for File plane_mesh.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_shapes_meshes_plane_mesh.hpp>` (``ltb-geom/include/ltb/geom/shapes/meshes/plane_mesh.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   // project
+   #include "ltb/geom/mesh.hpp"
+   
+   namespace ltb::geom {
+   
+   template <typename T = float>
+   auto plane_mesh(unsigned u_divisions = 0u, unsigned v_divisions = 0u) -> Mesh<3, T>;
+   
+   } // namespace ltb::geom

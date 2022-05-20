@@ -1,0 +1,30 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_shapes_ball.hpp:
+
+Program Listing for File ball.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_shapes_ball.hpp>` (``ltb-geom/include/ltb/geom/shapes/ball.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   // project
+   #include "fwd.hpp"
+   #include "ltb/geom/vec.hpp"
+   
+   namespace ltb::geom {
+   
+   template <glm::length_t L, typename T>
+   struct Ball {
+       glm::vec<L, T> center = glm::vec<L, T>(0);
+       T              radius = T(1);
+   };
+   
+   } // namespace ltb::geom

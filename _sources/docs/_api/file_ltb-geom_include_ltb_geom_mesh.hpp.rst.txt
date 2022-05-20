@@ -1,0 +1,116 @@
+
+.. _file_ltb-geom_include_ltb_geom_mesh.hpp:
+
+File mesh.hpp
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/mesh.hpp``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_mesh.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``ostream``
+
+- ``vec.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_vec.hpp`)
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_axes_mesh.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_cube_mesh.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_disc_mesh.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_icosphere_mesh.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_plane_mesh.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Mesh`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1MeshAndTransform`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af`
+
+- :ref:`exhale_function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79`
+
+- :ref:`exhale_function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578`
+
+- :ref:`exhale_function_mesh_8hpp_1a0dbe34bfbd71a492dbb2bfc73f890a7b`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65`
+
+- :ref:`exhale_typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15`
+
+- :ref:`exhale_typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b`
+

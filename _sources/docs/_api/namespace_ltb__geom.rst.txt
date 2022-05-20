@@ -1,0 +1,201 @@
+
+.. _namespace_ltb__geom:
+
+Namespace ltb::geom
+===================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb__geom__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Ball`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Box`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Capsule`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Interpolator`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Mesh`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1MeshAndTransform`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Polygon`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Range`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Shape`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4`
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d`
+
+- :ref:`exhale_enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566`
+
+- :ref:`exhale_enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ltb-geom_2include_2ltb_2geom_2comparison__utils_8hpp_1aaf8192c9a91f2b07fda08fc454d8ec8c`
+
+- :ref:`exhale_function_axes__mesh_8hpp_1a47f1ab482dc23edc6de4ef95b0f6378d`
+
+- :ref:`exhale_function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951`
+
+- :ref:`exhale_function_range_8hpp_1a7c30d0fb0bcbf9741d84401e6bab1117`
+
+- :ref:`exhale_function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273`
+
+- :ref:`exhale_function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74`
+
+- :ref:`exhale_function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8`
+
+- :ref:`exhale_function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e`
+
+- :ref:`exhale_function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42`
+
+- :ref:`exhale_function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c`
+
+- :ref:`exhale_function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef`
+
+- :ref:`exhale_function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af`
+
+- :ref:`exhale_function_solvers_8hpp_1a81fbe6d63292a8975b7884a82a63dfe4`
+
+- :ref:`exhale_function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd`
+
+- :ref:`exhale_function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf`
+
+- :ref:`exhale_function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad`
+
+- :ref:`exhale_function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7`
+
+- :ref:`exhale_function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79`
+
+- :ref:`exhale_function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea`
+
+- :ref:`exhale_function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad`
+
+- :ref:`exhale_function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578`
+
+- :ref:`exhale_function_io_8hpp_1a6c0ede59af1868e21977241ea39bcb20`
+
+- :ref:`exhale_function_io_8hpp_1a3502cb8184ae89c5b831fb5a116d43b0`
+
+- :ref:`exhale_function_plane__mesh_8hpp_1a2527abee8ff7b49900bf39e0c7119bfc`
+
+- :ref:`exhale_function_solvers_8hpp_1a2d8eb0d0ac63a932f45dd4a16dfa3cf8`
+
+- :ref:`exhale_function_solvers_8hpp_1aaa5d4e4ea678305236c87638c0f5e48a`
+
+- :ref:`exhale_function_mesh_8hpp_1a0dbe34bfbd71a492dbb2bfc73f890a7b`
+
+- :ref:`exhale_function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701`
+
+- :ref:`exhale_function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d`
+
+- :ref:`exhale_typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f`
+
+- :ref:`exhale_typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86`
+
+- :ref:`exhale_typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65`
+
+- :ref:`exhale_typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15`
+
+- :ref:`exhale_typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b`
+
+- :ref:`exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d`
+
+- :ref:`exhale_typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b`
+
+- :ref:`exhale_typedef_range_8hpp_1a2ecad0a888dc52543d9c8b94a1b35e2c`
+
+- :ref:`exhale_typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c`
+
+- :ref:`exhale_typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb`
+
+- :ref:`exhale_typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3`
+
+- :ref:`exhale_typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a`
+
+- :ref:`exhale_typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143`
+
+- :ref:`exhale_typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c`

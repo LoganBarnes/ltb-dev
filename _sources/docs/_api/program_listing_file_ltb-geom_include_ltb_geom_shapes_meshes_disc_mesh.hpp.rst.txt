@@ -1,0 +1,26 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_shapes_meshes_disc_mesh.hpp:
+
+Program Listing for File disc_mesh.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_shapes_meshes_disc_mesh.hpp>` (``ltb-geom/include/ltb/geom/shapes/meshes/disc_mesh.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   // project
+   #include "ltb/geom/mesh.hpp"
+   
+   namespace ltb::geom {
+   
+   template <typename T = float>
+   auto disc_mesh(unsigned spokes = 30u, unsigned rings = 15u) -> Mesh<3, T>;
+   
+   } // namespace ltb::geom

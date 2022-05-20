@@ -1,0 +1,20 @@
+.. _dir_ltb-geom_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom>` (``ltb-geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``ltb-geom/include``
+
+Subdirectories
+--------------
+
+- :ref:`dir_ltb-geom_include_ltb`
+
+
+

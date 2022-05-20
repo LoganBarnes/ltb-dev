@@ -1,0 +1,35 @@
+.. _dir_ltb-geom_include_ltb_geom:
+
+
+Directory geom
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb>` (``ltb-geom/include/ltb``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``ltb-geom/include/ltb/geom``
+
+Subdirectories
+--------------
+
+- :ref:`dir_ltb-geom_include_ltb_geom_shapes`
+
+
+Files
+-----
+
+- :ref:`file_ltb-geom_include_ltb_geom_comparison_utils.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_fwd.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_2d.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_3d.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_range.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_ray.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_solvers.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_transform.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_vec.hpp`
+
+

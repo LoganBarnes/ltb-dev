@@ -1,0 +1,14 @@
+.. _exhale_function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef:
+
+Template Function ltb::geom::inf
+================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_vec.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::inf()
+   :project: ltb

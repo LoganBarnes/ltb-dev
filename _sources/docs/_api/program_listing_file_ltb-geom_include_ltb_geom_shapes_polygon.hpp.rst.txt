@@ -1,0 +1,31 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_shapes_polygon.hpp:
+
+Program Listing for File polygon.hpp
+====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_shapes_polygon.hpp>` (``ltb-geom/include/ltb/geom/shapes/polygon.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   // project
+   #include "ltb/geom/vec.hpp"
+   
+   // system
+   #include <vector>
+   
+   namespace ltb::geom {
+   
+   template <typename T>
+   struct Polygon {
+       std::vector<glm::vec<2, T>> points = {};
+   };
+   
+   } // namespace ltb::geom

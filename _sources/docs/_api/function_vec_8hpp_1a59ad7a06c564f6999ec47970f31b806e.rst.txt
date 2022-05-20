@@ -1,0 +1,14 @@
+.. _exhale_function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e:
+
+Template Function ltb::geom::transform_vector
+=============================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_vec.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::transform_vector(glm::mat<L+1, L+1, T> const&, glm::vec<L, T> const&)
+   :project: ltb

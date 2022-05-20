@@ -1,0 +1,14 @@
+.. _exhale_function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273:
+
+Template Function ltb::geom::cube_mesh
+======================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_cube_mesh.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::cube_mesh(unsigned, unsigned)
+   :project: ltb

@@ -1,0 +1,21 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_fwd.hpp:
+
+Program Listing for File fwd.hpp
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_fwd.hpp>` (``ltb-geom/include/ltb/geom/fwd.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   // project
+   #include "shapes/fwd.hpp"
+   
+   namespace ltb::geom {} // namespace ltb::geom

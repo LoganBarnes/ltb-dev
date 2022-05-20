@@ -1,0 +1,14 @@
+.. _exhale_function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af:
+
+Function ltb::geom::is_triangle_format
+======================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::is_triangle_format(GeometryFormat const&)
+   :project: ltb

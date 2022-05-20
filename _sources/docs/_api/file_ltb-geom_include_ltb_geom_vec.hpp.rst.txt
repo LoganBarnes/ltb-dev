@@ -1,0 +1,91 @@
+
+.. _file_ltb-geom_include_ltb_geom_vec.hpp:
+
+File vec.hpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/vec.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_vec.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``glm/gtc/vec1.hpp``
+
+- ``glm/vec2.hpp``
+
+- ``glm/vec3.hpp``
+
+- ``glm/vec4.hpp``
+
+- ``limits``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_ray.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_ball.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_box.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_capsule.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_polygon.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c`
+
+- :ref:`exhale_function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef`
+
+- :ref:`exhale_function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd`
+
+- :ref:`exhale_function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf`
+
+- :ref:`exhale_function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad`
+
+- :ref:`exhale_function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701`
+
+- :ref:`exhale_function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e`
+

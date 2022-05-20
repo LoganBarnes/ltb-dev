@@ -1,0 +1,14 @@
+.. _exhale_function_solvers_8hpp_1a2d8eb0d0ac63a932f45dd4a16dfa3cf8:
+
+Template Function ltb::geom::solve_cubic
+========================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_solvers.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::solve_cubic(T, T, T, T, T *, T *, T *)
+   :project: ltb

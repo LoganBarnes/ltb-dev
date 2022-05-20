@@ -1,0 +1,14 @@
+.. _exhale_typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d:
+
+Typedef ltb::geom::Polygon2
+===========================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_fwd.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::Polygon2
+   :project: ltb

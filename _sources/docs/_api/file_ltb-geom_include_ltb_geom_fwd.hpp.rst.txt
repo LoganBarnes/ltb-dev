@@ -1,0 +1,46 @@
+
+.. _file_ltb-geom_include_ltb_geom_fwd.hpp:
+
+File fwd.hpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/fwd.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_fwd.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``shapes/fwd.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_shapes_fwd.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+

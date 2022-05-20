@@ -1,0 +1,61 @@
+
+.. _file_ltb-geom_include_ltb_geom_interpolator.hpp:
+
+File interpolator.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/interpolator.hpp``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_interpolator.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ltb/geom/vec.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_vec.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_2d.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_3d.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Interpolator`
+

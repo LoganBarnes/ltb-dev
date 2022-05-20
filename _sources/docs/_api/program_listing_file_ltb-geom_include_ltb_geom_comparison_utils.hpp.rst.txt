@@ -1,0 +1,36 @@
+
+.. _program_listing_file_ltb-geom_include_ltb_geom_comparison_utils.hpp:
+
+Program Listing for File comparison_utils.hpp
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_ltb-geom_include_ltb_geom_comparison_utils.hpp>` (``ltb-geom/include/ltb/geom/comparison_utils.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   // Copyright (c) 2021 Logan Barnes - All Rights Reserved
+   // ///////////////////////////////////////////////////////////////////////////////////////
+   #pragma once
+   
+   // project
+   #include "vec.hpp"
+   #include "ltb/util/comparison_utils.hpp"
+   
+   namespace ltb::geom {
+   
+   template <glm::length_t L, typename T>
+   auto constexpr almost_equal(glm::vec<L, T> const& lhs, glm::vec<L, T> const& rhs) ->
+       typename std::enable_if_t<std::is_floating_point<T>::value, bool> {
+   
+       for (glm::length_t i = 0; i < L; ++i) {
+           if (!util::almost_equal(lhs[i], rhs[i])) {
+               return false;
+           }
+       }
+       return true;
+   }
+   
+   } // namespace ltb::geom

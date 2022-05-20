@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Struct Interpolator&lt; 3, T &gt; &mdash; LTB Development 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Template Struct Mesh" href="structltb_1_1geom_1_1Mesh.html" />
+    <link rel="prev" title="Template Struct Interpolator&lt; 2, T &gt;" href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> LTB Development
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html">LTB Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-geom/README.html">ltb-geom</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">APIs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1app_1_1ApplicationData.html">Struct ApplicationData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1app_1_1ApplicationInitialization.html">Struct ApplicationInitialization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Ball.html">Template Struct Ball</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Box.html">Template Struct Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Capsule.html">Template Struct Capsule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1detail_1_1Ray.html">Template Struct Ray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator.html">Template Struct Interpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html">Template Struct Interpolator&lt; 2, T &gt;</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Template Struct Interpolator&lt; 3, T &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Mesh.html">Template Struct Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1MeshAndTransform.html">Template Struct MeshAndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Polygon.html">Template Struct Polygon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Range.html">Template Struct Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Shape.html">Template Struct Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4.html">Template Struct Shape&lt; S&lt; L, T &gt; &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4.html">Template Struct Shape&lt; S&lt; L, T, Q &gt; &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1AsyncTaskRunner_1_1FinishedTask.html">Struct AsyncTaskRunner::FinishedTask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1AsyncTaskRunner_1_1TaskToDo.html">Struct AsyncTaskRunner::TaskToDo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1ContextError.html">Template Struct ContextError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1Flags.html">Template Struct Flags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1PriorityTag.html">Template Struct PriorityTag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1PriorityTag_3_010_01_4.html">Template Struct PriorityTag&lt; 0 &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1ScopedLock.html">Struct ScopedLock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1SourceLocation.html">Struct SourceLocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1Visitor.html">Template Struct Visitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structstd_1_1hash_3_01ltb_1_1util_1_1MultiUuid_3_01T_01_4_01_4.html">Template Struct hash&lt; ltb::util::MultiUuid&lt; T &gt; &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structstd_1_1hash_3_01ltb_1_1util_1_1Uuid_3_01T_01_4_01_4.html">Template Struct hash&lt; ltb::util::Uuid&lt; T &gt; &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1app_1_1GlfwVulkanImguiApp.html">Class GlfwVulkanImguiApp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1AsyncTaskRunner.html">Template Class AsyncTaskRunner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1AtomicData.html">Template Class AtomicData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1BlockingQueue.html">Template Class BlockingQueue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1Error.html">Class Error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1GenericGuard.html">Template Class GenericGuard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1MultiUuid.html">Template Class MultiUuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1ScopedTimer.html">Class ScopedTimer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1Timer.html">Class Timer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1Uuid.html">Template Class Uuid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classltb_1_1util_1_1UuidGenerator.html">Class UuidGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classtl_1_1expected.html">Template Class expected</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">LTB Development</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">APIs</a> &raquo;</li>
+      <li>Template Struct Interpolator&lt; 3, T &gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/_api/structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="template-struct-interpolator-3-t">
+<span id="exhale-struct-structltb-1-1geom-1-1interpolator-3-013-00-01t-01-4"></span><h1>Template Struct Interpolator&lt; 3, T &gt;<a class="headerlink" href="#template-struct-interpolator-3-t" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_ltb-geom_include_ltb_geom_interpolator_3d.hpp.html#file-ltb-geom-include-ltb-geom-interpolator-3d-hpp"><span class="std std-ref">File interpolator_3d.hpp</span></a></p></li>
+</ul>
+<section id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE">
+<span id="_CPPv3I0EN3ltb4geom12InterpolatorIXL3EE1TEE"></span><span id="_CPPv2I0EN3ltb4geom12InterpolatorIX3E1TEE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">ltb</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">geom</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Interpolator</span></span></span><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Performs trilinear interpolation for a point in a cube. </p>
+<p><div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Box</span><span class="w"> </span><span class="n">Q</span><span class="o">:</span><span class="w"></span>
+
+<span class="w">         </span><span class="n">Q122</span><span class="o">------</span><span class="n">Q222</span><span class="w"></span>
+<span class="w">         </span><span class="o">/</span><span class="w"> </span><span class="o">:</span><span class="w">       </span><span class="o">/</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">Q121</span><span class="o">------</span><span class="w"> </span><span class="n">Q221</span><span class="w">  </span><span class="o">---</span><span class="w"></span>
+<span class="w">        </span><span class="o">|</span><span class="w">  </span><span class="o">:</span><span class="w">      </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w">   </span><span class="o">|</span><span class="w"></span>
+<span class="w">        </span><span class="o">|</span><span class="n">Q112</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">|</span><span class="n">Q212</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="n">yd</span><span class="w">     </span><span class="o">---</span><span class="w"> </span><span class="n">z2</span><span class="w">      </span><span class="o">---</span><span class="w"></span>
+<span class="w">        </span><span class="o">|</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="o">/</span><span class="w">    </span><span class="o">|</span><span class="w">                    </span><span class="o">/</span><span class="w"> </span><span class="n">zd</span><span class="w"></span>
+<span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">Q111</span><span class="o">------</span><span class="n">Q211</span><span class="w">   </span><span class="o">---</span><span class="w">     </span><span class="o">---</span><span class="w"> </span><span class="n">z1</span><span class="w">      </span><span class="o">---</span><span class="w"></span>
+<span class="w">        </span><span class="o">|</span><span class="w">          </span><span class="o">|</span><span class="w"></span>
+<span class="w">        </span><span class="n">x1</span><span class="w">         </span><span class="n">x2</span><span class="w"></span>
+
+<span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="o">--------</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w">             </span><span class="n">xd</span><span class="w"></span>
+
+<span class="n">The</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">box</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="n">can</span><span class="w"></span>
+<span class="n">be</span><span class="w"> </span><span class="n">approximated</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">trilinear</span><span class="w"> </span><span class="n">interpolation</span><span class="w"> </span><span class="n">defined</span><span class="w"> </span><span class="n">as</span><span class="o">:</span><span class="w"></span>
+
+<span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a0</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">z</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">z</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a6</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">z</span><span class="w"></span>
+<span class="w">         </span><span class="o">+</span><span class="w"> </span><span class="n">a7</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">z</span><span class="w"></span>
+
+<span class="nl">where</span><span class="p">:</span><span class="w"></span>
+<span class="n">a0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">Q11</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q12</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q21</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q22</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">xd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">yd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">zd</span><span class="p">)</span><span class="w"></span>
+<span class="n">a1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="p">(</span><span class="n">Q11</span><span class="p">)</span><span class="w">      </span><span class="o">*</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q12</span><span class="p">)</span><span class="w">      </span><span class="o">*</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q21</span><span class="p">)</span><span class="w">      </span><span class="o">*</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q22</span><span class="p">)</span><span class="w">      </span><span class="o">*</span><span class="w"> </span><span class="n">y1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">xd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">yd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">zd</span><span class="p">)</span><span class="w"></span>
+<span class="n">a2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="p">(</span><span class="n">Q11</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x2</span><span class="w">      </span><span class="o">+</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q12</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x2</span><span class="w">      </span><span class="o">+</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q21</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x1</span><span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q22</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x1</span><span class="w">     </span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">xd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">yd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">zd</span><span class="p">)</span><span class="w"></span>
+<span class="n">a3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">Q11</span><span class="p">)</span><span class="w">           </span><span class="o">-</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q12</span><span class="p">)</span><span class="w">           </span><span class="o">-</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q21</span><span class="p">)</span><span class="w">           </span><span class="o">+</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">Q22</span><span class="p">)</span><span class="w">          </span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">xd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">yd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">zd</span><span class="p">)</span><span class="w"></span>
+
+<span class="n">and</span><span class="w"></span>
+<span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">x2</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">y1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">y2</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">z1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">z2</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+ </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom12InterpolatorIXL3EE1TE12InterpolatorERKN4geom3BoxIXL3EE1TEERKNSt5arrayI1TXL8EEEE">
+<span id="_CPPv3N3ltb4geom12InterpolatorIXL3EE1TE12InterpolatorERKN4geom3BoxIXL3EE1TEERKNSt5arrayI1TXL8EEEE"></span><span id="_CPPv2N3ltb4geom12InterpolatorIX3E1TE12InterpolatorERKN4geom3BoxIX3E1TEERKNSt5arrayI1TX8EEE"></span><span id="ltb::geom::Interpolator:3.T:::Interpolator__geom::Box:3.T:CR.std::array:T.8:CR"></span><span class="target" id="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4_1a9b1c39b428992c7802732c3931c32d0d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Interpolator</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geom</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="structltb_1_1geom_1_1Box.html#_CPPv4I_N3glm8length_tE0EN3ltb4geom3BoxE" title="ltb::geom::Box"><span class="n"><span class="pre">Box</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">box</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">array</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">8</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">values</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ltb4geom12InterpolatorIXL3EE1TE12InterpolatorERKN4geom3BoxIXL3EE1TEERKNSt5arrayI1TXL8EEEE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom12InterpolatorIXL3EE1TEclERKN3glm3vecIXL3EE1TEE">
+<span id="_CPPv3N3ltb4geom12InterpolatorIXL3EE1TEclERKN3glm3vecIXL3EE1TEE"></span><span id="_CPPv2N3ltb4geom12InterpolatorIX3E1TEclERKN3glm3vecIX3E1TEE"></span><span id="ltb::geom::Interpolator:3.T:::call-operator__glm::vec:3.T:CR"></span><span class="target" id="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4_1acf135ade5351c31707d064f683f75828"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">glm</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vec</span></span><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">point</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><a class="headerlink" href="#_CPPv4N3ltb4geom12InterpolatorIXL3EE1TEclERKN3glm3vecIXL3EE1TEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Interpolate the value at <code class="docutils literal notranslate"><span class="pre">point</span></code> </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom12InterpolatorIXL3EE1TEclERK3RayIXL3EE1TERK5RangeI1TE">
+<span id="_CPPv3N3ltb4geom12InterpolatorIXL3EE1TEclERK3RayIXL3EE1TERK5RangeI1TE"></span><span id="_CPPv2N3ltb4geom12InterpolatorIX3E1TEclERK3RayIX3E1TERK5RangeI1TE"></span><span id="ltb::geom::Interpolator:3.T:::call-operator__Ray:3.T:CR.Range:T:CR"></span><span class="target" id="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4_1a96115e49f6db0f055e67a91f435c6105"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html#_CPPv4I_N3glm8length_tE0EN3ltb4geom3RayE" title="ltb::geom::Ray"><span class="n"><span class="pre">Ray</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ray</span></span>, <a class="reference internal" href="structltb_1_1geom_1_1Range.html#_CPPv4I0EN3ltb4geom5RangeE" title="ltb::geom::Range"><span class="n"><span class="pre">Range</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">t_range</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="o"><span class="pre">-&gt;</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3ltb4geom12InterpolatorIXL3EE1TEE" title="ltb::geom::Interpolator&lt;3, T&gt;::T"><span class="n"><span class="pre">T</span></span></a><a class="headerlink" href="#_CPPv4N3ltb4geom12InterpolatorIXL3EE1TEclERK3RayIXL3EE1TERK5RangeI1TE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Find the intersection point with <code class="docutils literal notranslate"><span class="pre">ray</span></code> </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html" class="btn btn-neutral float-left" title="Template Struct Interpolator&lt; 2, T &gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="structltb_1_1geom_1_1Mesh.html" class="btn btn-neutral float-right" title="Template Struct Mesh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Logan Barnes.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

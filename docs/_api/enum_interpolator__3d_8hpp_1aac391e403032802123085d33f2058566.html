@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enum Corner3d &mdash; LTB Development 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Enum GeometryFormat" href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html" />
+    <link rel="prev" title="Enum Corner2d" href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> LTB Development
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html">LTB Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-geom/README.html">ltb-geom</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">APIs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#enums">Enums</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268.html">Enum ApplicationUpdateMode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_application__data_8hpp_1a6383f051ee39ec6f804474d70734241a.html">Enum WindowType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html">Enum Corner2d</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Enum Corner3d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html">Enum GeometryFormat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">LTB Development</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">APIs</a> &raquo;</li>
+      <li>Enum Corner3d</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/_api/enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="enum-corner3d">
+<span id="exhale-enum-interpolator-3d-8hpp-1aac391e403032802123085d33f2058566"></span><h1>Enum Corner3d<a class="headerlink" href="#enum-corner3d" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_ltb-geom_include_ltb_geom_interpolator_3d.hpp.html#file-ltb-geom-include-ltb-geom-interpolator-3d-hpp"><span class="std std-ref">File interpolator_3d.hpp</span></a></p></li>
+</ul>
+<section id="enum-documentation">
+<h2>Enum Documentation<a class="headerlink" href="#enum-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3dE">
+<span id="_CPPv3N3ltb4geom8Corner3dE"></span><span id="_CPPv2N3ltb4geom8Corner3dE"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">ltb</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">geom</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Corner3d</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3dE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C000E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C000E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C000E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566a1774d6417bcb8cb72fd0fde4889d3032"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C000</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C000E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C100E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C100E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C100E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566a379645d1f48df048cf934da34a3e01c9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C100</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C100E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C010E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C010E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C010E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566ae7425ac9985fb84c3bdc9c151e77fb11"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C010</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C010E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C110E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C110E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C110E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566ace450f78ea7ccdc0dd3f14edef0bcff4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C110</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C110E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C001E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C001E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C001E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566ae98f60424e56768807a01a77d26ffd0f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C001</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C001E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C101E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C101E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C101E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566afa2d49755ace5d3ab72164b810c9fa69"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C101</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C101E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C011E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C011E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C011E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566acb3e5295907ebf8369f5cdb9eff741ec"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C011</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C011E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom8Corner3d4C111E">
+<span id="_CPPv3N3ltb4geom8Corner3d4C111E"></span><span id="_CPPv2N3ltb4geom8Corner3d4C111E"></span><span class="target" id="interpolator__3d_8hpp_1aac391e403032802123085d33f2058566a8a3523780d3767a122fdd2deb979f4b5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">C111</span></span></span><a class="headerlink" href="#_CPPv4N3ltb4geom8Corner3d4C111E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html" class="btn btn-neutral float-left" title="Enum Corner2d" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html" class="btn btn-neutral float-right" title="Enum GeometryFormat" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Logan Barnes.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

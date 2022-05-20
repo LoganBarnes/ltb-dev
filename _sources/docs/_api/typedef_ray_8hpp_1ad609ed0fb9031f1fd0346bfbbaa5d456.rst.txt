@@ -1,0 +1,14 @@
+.. _exhale_typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456:
+
+Typedef ltb::geom::TRay3
+========================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_ray.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::TRay3
+   :project: ltb

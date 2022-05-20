@@ -1,0 +1,14 @@
+.. _exhale_function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74:
+
+Template Function ltb::geom::dimensions(Range<T> const&)
+========================================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_range.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::dimensions(Range<T> const&)
+   :project: ltb

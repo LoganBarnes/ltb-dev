@@ -1,0 +1,17 @@
+.. _exhale_struct_structltb_1_1geom_1_1detail_1_1Ray:
+
+Template Struct Ray
+===================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_ray.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ltb::geom::detail::Ray
+   :project: ltb
+   :members:
+   :protected-members:
+   :undoc-members:

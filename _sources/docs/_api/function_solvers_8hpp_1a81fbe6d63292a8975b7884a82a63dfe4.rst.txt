@@ -1,0 +1,14 @@
+.. _exhale_function_solvers_8hpp_1a81fbe6d63292a8975b7884a82a63dfe4:
+
+Template Function ltb::geom::is_zero
+====================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_solvers.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::is_zero(T)
+   :project: ltb

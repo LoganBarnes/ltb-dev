@@ -1,0 +1,31 @@
+.. _dir_ltb-geom_include_ltb_geom_shapes:
+
+
+Directory shapes
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``ltb-geom/include/ltb/geom/shapes``
+
+Subdirectories
+--------------
+
+- :ref:`dir_ltb-geom_include_ltb_geom_shapes_meshes`
+
+
+Files
+-----
+
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_ball.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_box.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_capsule.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_fwd.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_io.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_polygon.hpp`
+- :ref:`file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp`
+
+

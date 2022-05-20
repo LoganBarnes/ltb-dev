@@ -1,0 +1,14 @@
+.. _exhale_function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951:
+
+Template Function ltb::geom::center
+===================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_box.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::center(Box<L, T> const&)
+   :project: ltb

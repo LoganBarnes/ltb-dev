@@ -1,0 +1,14 @@
+.. _exhale_enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d:
+
+Enum Corner2d
+=============
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_interpolator_2d.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ltb::geom::Corner2d
+   :project: ltb

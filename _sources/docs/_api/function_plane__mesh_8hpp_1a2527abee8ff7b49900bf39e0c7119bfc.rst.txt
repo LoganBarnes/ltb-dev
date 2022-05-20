@@ -1,0 +1,14 @@
+.. _exhale_function_plane__mesh_8hpp_1a2527abee8ff7b49900bf39e0c7119bfc:
+
+Template Function ltb::geom::plane_mesh
+=======================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_shapes_meshes_plane_mesh.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::plane_mesh(unsigned, unsigned)
+   :project: ltb

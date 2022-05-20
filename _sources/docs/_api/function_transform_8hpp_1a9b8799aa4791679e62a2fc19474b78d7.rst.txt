@@ -1,0 +1,14 @@
+.. _exhale_function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7:
+
+Function ltb::geom::normals_matrix
+==================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_transform.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::normals_matrix(glm::mat4 const&)
+   :project: ltb

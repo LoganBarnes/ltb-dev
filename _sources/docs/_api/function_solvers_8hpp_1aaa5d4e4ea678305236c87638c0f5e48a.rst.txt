@@ -1,0 +1,14 @@
+.. _exhale_function_solvers_8hpp_1aaa5d4e4ea678305236c87638c0f5e48a:
+
+Template Function ltb::geom::solve_quadratic
+============================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_solvers.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::solve_quadratic(T, T, T, T *, T *)
+   :project: ltb

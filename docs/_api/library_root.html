@@ -55,6 +55,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#namespaces">Namespaces</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="namespace_ltb.html">Namespace ltb</a></li>
 <li class="toctree-l4"><a class="reference internal" href="namespace_ltb__app.html">Namespace ltb::app</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__geom.html">Namespace ltb::geom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_ltb__geom__detail.html">Namespace ltb::geom::detail</a></li>
 <li class="toctree-l4"><a class="reference internal" href="namespace_ltb__util.html">Namespace ltb::util</a></li>
 <li class="toctree-l4"><a class="reference internal" href="namespace_ltb__util__detail.html">Namespace ltb::util::detail</a></li>
 <li class="toctree-l4"><a class="reference internal" href="namespace_ltb__util__flag_operators.html">Namespace ltb::util::flag_operators</a></li>
@@ -65,6 +67,20 @@
 <li class="toctree-l3"><a class="reference internal" href="#classes-and-structs">Classes and Structs</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="structltb_1_1app_1_1ApplicationData.html">Struct ApplicationData</a></li>
 <li class="toctree-l4"><a class="reference internal" href="structltb_1_1app_1_1ApplicationInitialization.html">Struct ApplicationInitialization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Ball.html">Template Struct Ball</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Box.html">Template Struct Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Capsule.html">Template Struct Capsule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1detail_1_1Ray.html">Template Struct Ray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator.html">Template Struct Interpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html">Template Struct Interpolator&lt; 2, T &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4.html">Template Struct Interpolator&lt; 3, T &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Mesh.html">Template Struct Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1MeshAndTransform.html">Template Struct MeshAndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Polygon.html">Template Struct Polygon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Range.html">Template Struct Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Shape.html">Template Struct Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4.html">Template Struct Shape&lt; S&lt; L, T &gt; &gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4.html">Template Struct Shape&lt; S&lt; L, T, Q &gt; &gt;</a></li>
 <li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1AsyncTaskRunner_1_1FinishedTask.html">Struct AsyncTaskRunner::FinishedTask</a></li>
 <li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1AsyncTaskRunner_1_1TaskToDo.html">Struct AsyncTaskRunner::TaskToDo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="structltb_1_1util_1_1ContextError.html">Template Struct ContextError</a></li>
@@ -93,14 +109,46 @@
 <li class="toctree-l3"><a class="reference internal" href="#enums">Enums</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268.html">Enum ApplicationUpdateMode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_application__data_8hpp_1a6383f051ee39ec6f804474d70734241a.html">Enum WindowType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html">Enum Corner2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566.html">Enum Corner3d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html">Enum GeometryFormat</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="function_application__data_8hpp_1aa5f503bcc0491481d1241984727cafdd.html">Function ltb::app::samples_with_monitor_scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_ltb-geom_2include_2ltb_2geom_2comparison__utils_8hpp_1aaf8192c9a91f2b07fda08fc454d8ec8c.html">Template Function ltb::geom::almost_equal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_axes__mesh_8hpp_1a47f1ab482dc23edc6de4ef95b0f6378d.html">Template Function ltb::geom::axes_mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951.html">Template Function ltb::geom::center</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_range_8hpp_1a7c30d0fb0bcbf9741d84401e6bab1117.html">Template Function ltb::geom::contains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273.html">Template Function ltb::geom::cube_mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74.html">Template Function ltb::geom::dimensions(Range&lt;T&gt; const&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8.html">Template Function ltb::geom::dimensions(Box&lt;L, T&gt; const&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e.html">Template Function ltb::geom::disc_mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42.html">Template Function ltb::geom::icosphere_mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c.html">Template Function ltb::geom::identity_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef.html">Template Function ltb::geom::inf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af.html">Function ltb::geom::is_triangle_format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_solvers_8hpp_1a81fbe6d63292a8975b7884a82a63dfe4.html">Template Function ltb::geom::is_zero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd.html">Template Function ltb::geom::make_zeroed_vec(T)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf.html">Template Function ltb::geom::make_zeroed_vec(T, T)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad.html">Template Function ltb::geom::make_zeroed_vec(T, T, T)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7.html">Function ltb::geom::normals_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79.html">Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, GeometryFormat const&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea.html">Template Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, Ball&lt;L, T&gt; const&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad.html">Template Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, Box&lt;L, T&gt; const&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578.html">Template Function ltb::geom::operator==</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_io_8hpp_1a6c0ede59af1868e21977241ea39bcb20.html">Template Function ltb::geom::operator&gt;&gt;(std::istream&amp;, Ball&lt;L, T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_io_8hpp_1a3502cb8184ae89c5b831fb5a116d43b0.html">Template Function ltb::geom::operator&gt;&gt;(std::istream&amp;, Box&lt;L, T&gt;&amp;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_plane__mesh_8hpp_1a2527abee8ff7b49900bf39e0c7119bfc.html">Template Function ltb::geom::plane_mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_solvers_8hpp_1a2d8eb0d0ac63a932f45dd4a16dfa3cf8.html">Template Function ltb::geom::solve_cubic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_solvers_8hpp_1aaa5d4e4ea678305236c87638c0f5e48a.html">Template Function ltb::geom::solve_quadratic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_mesh_8hpp_1a0dbe34bfbd71a492dbb2bfc73f890a7b.html">Template Function ltb::geom::transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701.html">Template Function ltb::geom::transform_point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e.html">Template Function ltb::geom::transform_vector</a></li>
 <li class="toctree-l4"><a class="reference internal" href="function_enum__flags_8hpp_1a6af8090ce9586d1286944503b5fb8086.html">Template Function ltb::util::add_flag</a></li>
 <li class="toctree-l4"><a class="reference internal" href="function_enum__bits_8hpp_1a2004ff83d95ea9a72fecdcc931bc9178.html">Template Function ltb::util::all_bits</a></li>
 <li class="toctree-l4"><a class="reference internal" href="function_enum__flags_8hpp_1a9f8e898aeb6b852ee03b979d767c9084.html">Template Function ltb::util::all_flags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="function_comparison__utils_8hpp_1aa620c1f78777faba7f5ed6e7a7bc53de.html">Template Function ltb::util::almost_equal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_ltb-util_2include_2ltb_2util_2comparison__utils_8hpp_1aa620c1f78777faba7f5ed6e7a7bc53de.html">Template Function ltb::util::almost_equal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="function_type__string_8hpp_1a06fcb0f0e1af99d40f7e875f63d02ac8.html">Function ltb::util::detail::demangle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="function_type__string_8hpp_1a220f5a714114c04be7c628b7370c0273.html">Function ltb::util::detail::replace_ugly_strings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="function_duration_8hpp_1ab6aa0b29b17956b5926223de9ab20032.html">Template Function ltb::util::detail::time_from_integral</a></li>
@@ -181,17 +229,50 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c.html">Variable ltb::geom::shape_dimensions_v</a></li>
 <li class="toctree-l4"><a class="reference internal" href="variable_error__callback_8hpp_1aeca38cc1a244a6770abd4ab78abfa295.html">Variable ltb::util::ignore_errors</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#defines">Defines</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="define_result_8hpp_1ac00a668fc7d1d0fdd8366c8f2e6edcc0.html">Define CHECK_RESULT</a></li>
-<li class="toctree-l4"><a class="reference internal" href="define_comparison__utils_8hpp_1a1a243327ff6a36dea85b8ce1a56b58d7.html">Define GOOGLE_COMPARISON</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_ltb-util_2include_2ltb_2util_2comparison__utils_8hpp_1a1a243327ff6a36dea85b8ce1a56b58d7.html">Define GOOGLE_COMPARISON</a></li>
 <li class="toctree-l4"><a class="reference internal" href="define_error_8hpp_1a9fea57f3db8f8dbf3c7e7d33d4dde497.html">Define LTB_MAKE_ERROR</a></li>
 <li class="toctree-l4"><a class="reference internal" href="define_error_8hpp_1a710103504cc979878810f07db4fcc2fc.html">Define LTB_MAKE_WARNING</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047.html">Typedef ltb::geom::Ball2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40.html">Typedef ltb::geom::Ball3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1.html">Typedef ltb::geom::Box2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c.html">Typedef ltb::geom::Box3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636.html">Typedef ltb::geom::Capsule2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e.html">Typedef ltb::geom::Capsule3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666.html">Typedef ltb::geom::DBall2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb.html">Typedef ltb::geom::DBall3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c.html">Typedef ltb::geom::DBox2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc.html">Typedef ltb::geom::DBox3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156.html">Typedef ltb::geom::DCapsule2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a.html">Typedef ltb::geom::DCapsule3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20.html">Typedef ltb::geom::dMesh2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669.html">Typedef ltb::geom::dMesh2AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa.html">Typedef ltb::geom::dMesh3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55.html">Typedef ltb::geom::dMesh3AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d.html">Typedef ltb::geom::DPolygon2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f.html">Typedef ltb::geom::DRay2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961.html">Typedef ltb::geom::DRay3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86.html">Typedef ltb::geom::Mesh2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65.html">Typedef ltb::geom::Mesh2AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15.html">Typedef ltb::geom::Mesh3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b.html">Typedef ltb::geom::Mesh3AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d.html">Typedef ltb::geom::Polygon2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b.html">Typedef ltb::geom::Range2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_range_8hpp_1a2ecad0a888dc52543d9c8b94a1b35e2c.html">Typedef ltb::geom::Range2Di</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html">Typedef ltb::geom::Ray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb.html">Typedef ltb::geom::Ray2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html">Typedef ltb::geom::Ray3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a.html">Typedef ltb::geom::shape_type_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143.html">Typedef ltb::geom::TRay2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456.html">Typedef ltb::geom::TRay3</a></li>
 <li class="toctree-l4"><a class="reference internal" href="typedef_duration_8hpp_1abc0ba108ea35384ba9bac2d005ec8270.html">Typedef ltb::util::Duration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="typedef_error__callback_8hpp_1aeaa0b4bdf4f2e8887043800f63ff2335.html">Typedef ltb::util::ErrorCallback</a></li>
 <li class="toctree-l4"><a class="reference internal" href="typedef_blocking__queue_8hpp_1aaa08f16d1122bca0b9d3bc563ace39e9.html">Typedef ltb::util::NotifyCallback</a></li>
@@ -235,7 +316,7 @@
 <ul class="treeView" id="class-treeView">
   <li>
     <ul class="collapsibleList">
-      <li>Namespace <a href="namespace_ltb.html#namespace-ltb">ltb</a><ul><li>Namespace <a href="namespace_ltb__app.html#namespace-ltb-app">ltb::app</a><ul><li>Struct <a href="structltb_1_1app_1_1ApplicationData.html#exhale-struct-structltb-1-1app-1-1ApplicationData">ApplicationData</a></li><li>Struct <a href="structltb_1_1app_1_1ApplicationInitialization.html#exhale-struct-structltb-1-1app-1-1ApplicationInitialization">ApplicationInitialization</a></li><li>Class <a href="classltb_1_1app_1_1GlfwVulkanImguiApp.html#exhale-class-classltb-1-1app-1-1GlfwVulkanImguiApp">GlfwVulkanImguiApp</a></li><li>Enum <a href="enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268.html#exhale-enum-application-data-8hpp-1ac25a1f901fc7241ce876336d15f1f268">ApplicationUpdateMode</a></li><li class="lastChild">Enum <a href="enum_application__data_8hpp_1a6383f051ee39ec6f804474d70734241a.html#exhale-enum-application-data-8hpp-1a6383f051ee39ec6f804474d70734241a">WindowType</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_ltb__util.html#namespace-ltb-util">ltb::util</a><ul><li>Template Struct <a href="structltb_1_1util_1_1ContextError.html#exhale-struct-structltb-1-1util-1-1ContextError">ContextError</a></li><li>Template Struct <a href="structltb_1_1util_1_1Flags.html#exhale-struct-structltb-1-1util-1-1Flags">Flags</a></li><li>Template Struct <a href="structltb_1_1util_1_1PriorityTag.html#exhale-struct-structltb-1-1util-1-1PriorityTag">PriorityTag</a></li><li>Template <a href="structltb_1_1util_1_1PriorityTag_3_010_01_4.html#exhale-struct-structltb-1-1util-1-1PriorityTag-3-010-01-4">Struct PriorityTag&lt; 0 &gt;</a></li><li>Struct <a href="structltb_1_1util_1_1ScopedLock.html#exhale-struct-structltb-1-1util-1-1ScopedLock">ScopedLock</a></li><li>Struct <a href="structltb_1_1util_1_1SourceLocation.html#exhale-struct-structltb-1-1util-1-1SourceLocation">SourceLocation</a></li><li>Template Struct <a href="structltb_1_1util_1_1Visitor.html#exhale-struct-structltb-1-1util-1-1Visitor">Visitor</a></li><li>Template Class <a href="classltb_1_1util_1_1AsyncTaskRunner.html#exhale-class-classltb-1-1util-1-1AsyncTaskRunner">AsyncTaskRunner</a><ul><li>Struct <a href="structltb_1_1util_1_1AsyncTaskRunner_1_1FinishedTask.html#exhale-struct-structltb-1-1util-1-1AsyncTaskRunner-1-1FinishedTask">AsyncTaskRunner::FinishedTask</a></li><li class="lastChild">Struct <a href="structltb_1_1util_1_1AsyncTaskRunner_1_1TaskToDo.html#exhale-struct-structltb-1-1util-1-1AsyncTaskRunner-1-1TaskToDo">AsyncTaskRunner::TaskToDo</a></li></ul></li><li>Template Class <a href="classltb_1_1util_1_1AtomicData.html#exhale-class-classltb-1-1util-1-1AtomicData">AtomicData</a></li><li>Template Class <a href="classltb_1_1util_1_1BlockingQueue.html#exhale-class-classltb-1-1util-1-1BlockingQueue">BlockingQueue</a></li><li>Class <a href="classltb_1_1util_1_1Error.html#exhale-class-classltb-1-1util-1-1Error">Error</a></li><li>Template Class <a href="classltb_1_1util_1_1GenericGuard.html#exhale-class-classltb-1-1util-1-1GenericGuard">GenericGuard</a></li><li>Template Class <a href="classltb_1_1util_1_1MultiUuid.html#exhale-class-classltb-1-1util-1-1MultiUuid">MultiUuid</a></li><li>Class <a href="classltb_1_1util_1_1ScopedTimer.html#exhale-class-classltb-1-1util-1-1ScopedTimer">ScopedTimer</a></li><li>Class <a href="classltb_1_1util_1_1Timer.html#exhale-class-classltb-1-1util-1-1Timer">Timer</a></li><li>Template Class <a href="classltb_1_1util_1_1Uuid.html#exhale-class-classltb-1-1util-1-1Uuid">Uuid</a></li><li class="lastChild">Class <a href="classltb_1_1util_1_1UuidGenerator.html#exhale-class-classltb-1-1util-1-1UuidGenerator">UuidGenerator</a></li></ul></li></ul></li><li>Namespace <a href="namespace_std.html#namespace-std">std</a><ul><li>Template Struct <a href="structstd_1_1hash_3_01ltb_1_1util_1_1MultiUuid_3_01T_01_4_01_4.html#exhale-struct-structstd-1-1hash-3-01ltb-1-1util-1-1MultiUuid-3-01T-01-4-01-4">hash&lt; ltb::util::MultiUuid&lt; T &gt; &gt;</a></li><li class="lastChild">Template Struct <a href="structstd_1_1hash_3_01ltb_1_1util_1_1Uuid_3_01T_01_4_01_4.html#exhale-struct-structstd-1-1hash-3-01ltb-1-1util-1-1Uuid-3-01T-01-4-01-4">hash&lt; ltb::util::Uuid&lt; T &gt; &gt;</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_tl.html#namespace-tl">tl</a><ul><li class="lastChild">Template Class <a href="classtl_1_1expected.html#exhale-class-classtl-1-1expected">expected</a></li></ul></li>
+      <li>Namespace <a href="namespace_ltb.html#namespace-ltb">ltb</a><ul><li>Namespace <a href="namespace_ltb__app.html#namespace-ltb-app">ltb::app</a><ul><li>Struct <a href="structltb_1_1app_1_1ApplicationData.html#exhale-struct-structltb-1-1app-1-1ApplicationData">ApplicationData</a></li><li>Struct <a href="structltb_1_1app_1_1ApplicationInitialization.html#exhale-struct-structltb-1-1app-1-1ApplicationInitialization">ApplicationInitialization</a></li><li>Class <a href="classltb_1_1app_1_1GlfwVulkanImguiApp.html#exhale-class-classltb-1-1app-1-1GlfwVulkanImguiApp">GlfwVulkanImguiApp</a></li><li>Enum <a href="enum_application__data_8hpp_1ac25a1f901fc7241ce876336d15f1f268.html#exhale-enum-application-data-8hpp-1ac25a1f901fc7241ce876336d15f1f268">ApplicationUpdateMode</a></li><li class="lastChild">Enum <a href="enum_application__data_8hpp_1a6383f051ee39ec6f804474d70734241a.html#exhale-enum-application-data-8hpp-1a6383f051ee39ec6f804474d70734241a">WindowType</a></li></ul></li><li>Namespace <a href="namespace_ltb__geom.html#namespace-ltb-geom">ltb::geom</a><ul><li>Namespace <a href="namespace_ltb__geom__detail.html#namespace-ltb-geom-detail">ltb::geom::detail</a><ul><li class="lastChild">Template Struct <a href="structltb_1_1geom_1_1detail_1_1Ray.html#exhale-struct-structltb-1-1geom-1-1detail-1-1Ray">Ray</a></li></ul></li><li>Enum <a href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html#exhale-enum-interpolator-2d-8hpp-1a8706f656c70d55621e85cd5f17c4a86d">Corner2d</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Ball.html#exhale-struct-structltb-1-1geom-1-1Ball">Ball</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Box.html#exhale-struct-structltb-1-1geom-1-1Box">Box</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Capsule.html#exhale-struct-structltb-1-1geom-1-1Capsule">Capsule</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Interpolator.html#exhale-struct-structltb-1-1geom-1-1Interpolator">Interpolator</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html#exhale-struct-structltb-1-1geom-1-1Interpolator-3-012-00-01T-01-4">Interpolator&lt; 2, T &gt;</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4.html#exhale-struct-structltb-1-1geom-1-1Interpolator-3-013-00-01T-01-4">Interpolator&lt; 3, T &gt;</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Mesh.html#exhale-struct-structltb-1-1geom-1-1Mesh">Mesh</a></li><li>Template Struct <a href="structltb_1_1geom_1_1MeshAndTransform.html#exhale-struct-structltb-1-1geom-1-1MeshAndTransform">MeshAndTransform</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Polygon.html#exhale-struct-structltb-1-1geom-1-1Polygon">Polygon</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Range.html#exhale-struct-structltb-1-1geom-1-1Range">Range</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Shape.html#exhale-struct-structltb-1-1geom-1-1Shape">Shape</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4.html#exhale-struct-structltb-1-1geom-1-1Shape-3-01S-3-01L-00-01T-01-4-01-4">Shape&lt; S&lt; L, T &gt; &gt;</a></li><li>Template Struct <a href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4.html#exhale-struct-structltb-1-1geom-1-1Shape-3-01S-3-01L-00-01T-00-01Q-01-4-01-4">Shape&lt; S&lt; L, T, Q &gt; &gt;</a></li><li>Enum <a href="enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566.html#exhale-enum-interpolator-3d-8hpp-1aac391e403032802123085d33f2058566">Corner3d</a></li><li class="lastChild">Enum <a href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html#exhale-enum-mesh-8hpp-1a436d3e870e69cfb98fef0e655a8580d8">GeometryFormat</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_ltb__util.html#namespace-ltb-util">ltb::util</a><ul><li>Template Struct <a href="structltb_1_1util_1_1ContextError.html#exhale-struct-structltb-1-1util-1-1ContextError">ContextError</a></li><li>Template Struct <a href="structltb_1_1util_1_1Flags.html#exhale-struct-structltb-1-1util-1-1Flags">Flags</a></li><li>Template Struct <a href="structltb_1_1util_1_1PriorityTag.html#exhale-struct-structltb-1-1util-1-1PriorityTag">PriorityTag</a></li><li>Template <a href="structltb_1_1util_1_1PriorityTag_3_010_01_4.html#exhale-struct-structltb-1-1util-1-1PriorityTag-3-010-01-4">Struct PriorityTag&lt; 0 &gt;</a></li><li>Struct <a href="structltb_1_1util_1_1ScopedLock.html#exhale-struct-structltb-1-1util-1-1ScopedLock">ScopedLock</a></li><li>Struct <a href="structltb_1_1util_1_1SourceLocation.html#exhale-struct-structltb-1-1util-1-1SourceLocation">SourceLocation</a></li><li>Template Struct <a href="structltb_1_1util_1_1Visitor.html#exhale-struct-structltb-1-1util-1-1Visitor">Visitor</a></li><li>Template Class <a href="classltb_1_1util_1_1AsyncTaskRunner.html#exhale-class-classltb-1-1util-1-1AsyncTaskRunner">AsyncTaskRunner</a><ul><li>Struct <a href="structltb_1_1util_1_1AsyncTaskRunner_1_1FinishedTask.html#exhale-struct-structltb-1-1util-1-1AsyncTaskRunner-1-1FinishedTask">AsyncTaskRunner::FinishedTask</a></li><li class="lastChild">Struct <a href="structltb_1_1util_1_1AsyncTaskRunner_1_1TaskToDo.html#exhale-struct-structltb-1-1util-1-1AsyncTaskRunner-1-1TaskToDo">AsyncTaskRunner::TaskToDo</a></li></ul></li><li>Template Class <a href="classltb_1_1util_1_1AtomicData.html#exhale-class-classltb-1-1util-1-1AtomicData">AtomicData</a></li><li>Template Class <a href="classltb_1_1util_1_1BlockingQueue.html#exhale-class-classltb-1-1util-1-1BlockingQueue">BlockingQueue</a></li><li>Class <a href="classltb_1_1util_1_1Error.html#exhale-class-classltb-1-1util-1-1Error">Error</a></li><li>Template Class <a href="classltb_1_1util_1_1GenericGuard.html#exhale-class-classltb-1-1util-1-1GenericGuard">GenericGuard</a></li><li>Template Class <a href="classltb_1_1util_1_1MultiUuid.html#exhale-class-classltb-1-1util-1-1MultiUuid">MultiUuid</a></li><li>Class <a href="classltb_1_1util_1_1ScopedTimer.html#exhale-class-classltb-1-1util-1-1ScopedTimer">ScopedTimer</a></li><li>Class <a href="classltb_1_1util_1_1Timer.html#exhale-class-classltb-1-1util-1-1Timer">Timer</a></li><li>Template Class <a href="classltb_1_1util_1_1Uuid.html#exhale-class-classltb-1-1util-1-1Uuid">Uuid</a></li><li class="lastChild">Class <a href="classltb_1_1util_1_1UuidGenerator.html#exhale-class-classltb-1-1util-1-1UuidGenerator">UuidGenerator</a></li></ul></li></ul></li><li>Namespace <a href="namespace_std.html#namespace-std">std</a><ul><li>Template Struct <a href="structstd_1_1hash_3_01ltb_1_1util_1_1MultiUuid_3_01T_01_4_01_4.html#exhale-struct-structstd-1-1hash-3-01ltb-1-1util-1-1MultiUuid-3-01T-01-4-01-4">hash&lt; ltb::util::MultiUuid&lt; T &gt; &gt;</a></li><li class="lastChild">Template Struct <a href="structstd_1_1hash_3_01ltb_1_1util_1_1Uuid_3_01T_01_4_01_4.html#exhale-struct-structstd-1-1hash-3-01ltb-1-1util-1-1Uuid-3-01T-01-4-01-4">hash&lt; ltb::util::Uuid&lt; T &gt; &gt;</a></li></ul></li><li class="lastChild">Namespace <a href="namespace_tl.html#namespace-tl">tl</a><ul><li class="lastChild">Template Class <a href="classtl_1_1expected.html#exhale-class-classtl-1-1expected">expected</a></li></ul></li>
     </ul>
   </li><!-- only tree view element -->
 </ul><!-- /treeView class-treeView --></section>
@@ -244,7 +325,7 @@
 <ul class="treeView" id="file-treeView">
   <li>
     <ul class="collapsibleList">
-      <li>Directory <a href="dir_ltb-app-tmp.html#dir-ltb-app-tmp">ltb-app-tmp</a><ul><li class="lastChild">Directory <a href="dir_ltb-app-tmp_include.html#dir-ltb-app-tmp-include">include</a><ul><li class="lastChild">Directory <a href="dir_ltb-app-tmp_include_ltb.html#dir-ltb-app-tmp-include-ltb">ltb</a><ul><li class="lastChild">Directory <a href="dir_ltb-app-tmp_include_ltb_app.html#dir-ltb-app-tmp-include-ltb-app">app</a><ul><li>File <a href="file_ltb-app-tmp_include_ltb_app_application_data.hpp.html#file-ltb-app-tmp-include-ltb-app-application-data.hpp">application_data.hpp</a></li><li>File <a href="file_ltb-app-tmp_include_ltb_app_fwd.hpp.html#file-ltb-app-tmp-include-ltb-app-fwd.hpp">fwd.hpp</a></li><li class="lastChild">File <a href="file_ltb-app-tmp_include_ltb_app_glfw_vulkan_imgui_app.hpp.html#file-ltb-app-tmp-include-ltb-app-glfw-vulkan-imgui-app.hpp">glfw_vulkan_imgui_app.hpp</a></li></ul></li></ul></li></ul></li></ul></li><li class="lastChild">Directory <a href="dir_ltb-util.html#dir-ltb-util">ltb-util</a><ul><li class="lastChild">Directory <a href="dir_ltb-util_include.html#dir-ltb-util-include">include</a><ul><li class="lastChild">Directory <a href="dir_ltb-util_include_ltb.html#dir-ltb-util-include-ltb">ltb</a><ul><li class="lastChild">Directory <a href="dir_ltb-util_include_ltb_util.html#dir-ltb-util-include-ltb-util">util</a><ul><li>File <a href="file_ltb-util_include_ltb_util_async_task_runner.hpp.html#file-ltb-util-include-ltb-util-async-task-runner.hpp">async_task_runner.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_atomic_data.hpp.html#file-ltb-util-include-ltb-util-atomic-data.hpp">atomic_data.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_blocking_queue.hpp.html#file-ltb-util-include-ltb-util-blocking-queue.hpp">blocking_queue.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_comparison_utils.hpp.html#file-ltb-util-include-ltb-util-comparison-utils.hpp">comparison_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_container_utils.hpp.html#file-ltb-util-include-ltb-util-container-utils.hpp">container_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_duration.hpp.html#file-ltb-util-include-ltb-util-duration.hpp">duration.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_enum_bits.hpp.html#file-ltb-util-include-ltb-util-enum-bits.hpp">enum_bits.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_enum_flags.hpp.html#file-ltb-util-include-ltb-util-enum-flags.hpp">enum_flags.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_error.hpp.html#file-ltb-util-include-ltb-util-error.hpp">error.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_error_callback.hpp.html#file-ltb-util-include-ltb-util-error-callback.hpp">error_callback.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_file_utils.hpp.html#file-ltb-util-include-ltb-util-file-utils.hpp">file_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_generic_guard.hpp.html#file-ltb-util-include-ltb-util-generic-guard.hpp">generic_guard.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_hash_utils.hpp.html#file-ltb-util-include-ltb-util-hash-utils.hpp">hash_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_ignore.hpp.html#file-ltb-util-include-ltb-util-ignore.hpp">ignore.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_power_of_2.hpp.html#file-ltb-util-include-ltb-util-power-of-2.hpp">power_of_2.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_priority_tag.hpp.html#file-ltb-util-include-ltb-util-priority-tag.hpp">priority_tag.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_result.hpp.html#file-ltb-util-include-ltb-util-result.hpp">result.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_string.hpp.html#file-ltb-util-include-ltb-util-string.hpp">string.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_timer.hpp.html#file-ltb-util-include-ltb-util-timer.hpp">timer.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_type_string.hpp.html#file-ltb-util-include-ltb-util-type-string.hpp">type_string.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_uuid.hpp.html#file-ltb-util-include-ltb-util-uuid.hpp">uuid.hpp</a></li><li class="lastChild">File <a href="file_ltb-util_include_ltb_util_variant_utils.hpp.html#file-ltb-util-include-ltb-util-variant-utils.hpp">variant_utils.hpp</a></li></ul></li></ul></li></ul></li></ul></li>
+      <li>Directory <a href="dir_ltb-app-tmp.html#dir-ltb-app-tmp">ltb-app-tmp</a><ul><li class="lastChild">Directory <a href="dir_ltb-app-tmp_include.html#dir-ltb-app-tmp-include">include</a><ul><li class="lastChild">Directory <a href="dir_ltb-app-tmp_include_ltb.html#dir-ltb-app-tmp-include-ltb">ltb</a><ul><li class="lastChild">Directory <a href="dir_ltb-app-tmp_include_ltb_app.html#dir-ltb-app-tmp-include-ltb-app">app</a><ul><li>File <a href="file_ltb-app-tmp_include_ltb_app_application_data.hpp.html#file-ltb-app-tmp-include-ltb-app-application-data.hpp">application_data.hpp</a></li><li>File <a href="file_ltb-app-tmp_include_ltb_app_fwd.hpp.html#file-ltb-app-tmp-include-ltb-app-fwd.hpp">fwd.hpp</a></li><li class="lastChild">File <a href="file_ltb-app-tmp_include_ltb_app_glfw_vulkan_imgui_app.hpp.html#file-ltb-app-tmp-include-ltb-app-glfw-vulkan-imgui-app.hpp">glfw_vulkan_imgui_app.hpp</a></li></ul></li></ul></li></ul></li></ul></li><li>Directory <a href="dir_ltb-geom.html#dir-ltb-geom">ltb-geom</a><ul><li class="lastChild">Directory <a href="dir_ltb-geom_include.html#dir-ltb-geom-include">include</a><ul><li class="lastChild">Directory <a href="dir_ltb-geom_include_ltb.html#dir-ltb-geom-include-ltb">ltb</a><ul><li class="lastChild">Directory <a href="dir_ltb-geom_include_ltb_geom.html#dir-ltb-geom-include-ltb-geom">geom</a><ul><li>Directory <a href="dir_ltb-geom_include_ltb_geom_shapes.html#dir-ltb-geom-include-ltb-geom-shapes">shapes</a><ul><li>Directory <a href="dir_ltb-geom_include_ltb_geom_shapes_meshes.html#dir-ltb-geom-include-ltb-geom-shapes-meshes">meshes</a><ul><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_meshes_axes_mesh.hpp.html#file-ltb-geom-include-ltb-geom-shapes-meshes-axes-mesh.hpp">axes_mesh.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_meshes_cube_mesh.hpp.html#file-ltb-geom-include-ltb-geom-shapes-meshes-cube-mesh.hpp">cube_mesh.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_meshes_disc_mesh.hpp.html#file-ltb-geom-include-ltb-geom-shapes-meshes-disc-mesh.hpp">disc_mesh.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_meshes_icosphere_mesh.hpp.html#file-ltb-geom-include-ltb-geom-shapes-meshes-icosphere-mesh.hpp">icosphere_mesh.hpp</a></li><li class="lastChild">File <a href="file_ltb-geom_include_ltb_geom_shapes_meshes_plane_mesh.hpp.html#file-ltb-geom-include-ltb-geom-shapes-meshes-plane-mesh.hpp">plane_mesh.hpp</a></li></ul></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_ball.hpp.html#file-ltb-geom-include-ltb-geom-shapes-ball.hpp">ball.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_box.hpp.html#file-ltb-geom-include-ltb-geom-shapes-box.hpp">box.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_capsule.hpp.html#file-ltb-geom-include-ltb-geom-shapes-capsule.hpp">capsule.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_fwd.hpp.html#file-ltb-geom-include-ltb-geom-shapes-fwd.hpp">fwd.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_io.hpp.html#file-ltb-geom-include-ltb-geom-shapes-io.hpp">io.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_shapes_polygon.hpp.html#file-ltb-geom-include-ltb-geom-shapes-polygon.hpp">polygon.hpp</a></li><li class="lastChild">File <a href="file_ltb-geom_include_ltb_geom_shapes_shape_info.hpp.html#file-ltb-geom-include-ltb-geom-shapes-shape-info.hpp">shape_info.hpp</a></li></ul></li><li>File <a href="file_ltb-geom_include_ltb_geom_comparison_utils.hpp.html#file-ltb-geom-include-ltb-geom-comparison-utils.hpp">comparison_utils.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_fwd.hpp.html#file-ltb-geom-include-ltb-geom-fwd.hpp">fwd.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_interpolator.hpp.html#file-ltb-geom-include-ltb-geom-interpolator.hpp">interpolator.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_interpolator_2d.hpp.html#file-ltb-geom-include-ltb-geom-interpolator-2d.hpp">interpolator_2d.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_interpolator_3d.hpp.html#file-ltb-geom-include-ltb-geom-interpolator-3d.hpp">interpolator_3d.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_mesh.hpp.html#file-ltb-geom-include-ltb-geom-mesh.hpp">mesh.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_range.hpp.html#file-ltb-geom-include-ltb-geom-range.hpp">range.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_ray.hpp.html#file-ltb-geom-include-ltb-geom-ray.hpp">ray.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_solvers.hpp.html#file-ltb-geom-include-ltb-geom-solvers.hpp">solvers.hpp</a></li><li>File <a href="file_ltb-geom_include_ltb_geom_transform.hpp.html#file-ltb-geom-include-ltb-geom-transform.hpp">transform.hpp</a></li><li class="lastChild">File <a href="file_ltb-geom_include_ltb_geom_vec.hpp.html#file-ltb-geom-include-ltb-geom-vec.hpp">vec.hpp</a></li></ul></li></ul></li></ul></li></ul></li><li class="lastChild">Directory <a href="dir_ltb-util.html#dir-ltb-util">ltb-util</a><ul><li class="lastChild">Directory <a href="dir_ltb-util_include.html#dir-ltb-util-include">include</a><ul><li class="lastChild">Directory <a href="dir_ltb-util_include_ltb.html#dir-ltb-util-include-ltb">ltb</a><ul><li class="lastChild">Directory <a href="dir_ltb-util_include_ltb_util.html#dir-ltb-util-include-ltb-util">util</a><ul><li>File <a href="file_ltb-util_include_ltb_util_async_task_runner.hpp.html#file-ltb-util-include-ltb-util-async-task-runner.hpp">async_task_runner.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_atomic_data.hpp.html#file-ltb-util-include-ltb-util-atomic-data.hpp">atomic_data.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_blocking_queue.hpp.html#file-ltb-util-include-ltb-util-blocking-queue.hpp">blocking_queue.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_comparison_utils.hpp.html#file-ltb-util-include-ltb-util-comparison-utils.hpp">comparison_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_container_utils.hpp.html#file-ltb-util-include-ltb-util-container-utils.hpp">container_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_duration.hpp.html#file-ltb-util-include-ltb-util-duration.hpp">duration.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_enum_bits.hpp.html#file-ltb-util-include-ltb-util-enum-bits.hpp">enum_bits.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_enum_flags.hpp.html#file-ltb-util-include-ltb-util-enum-flags.hpp">enum_flags.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_error.hpp.html#file-ltb-util-include-ltb-util-error.hpp">error.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_error_callback.hpp.html#file-ltb-util-include-ltb-util-error-callback.hpp">error_callback.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_file_utils.hpp.html#file-ltb-util-include-ltb-util-file-utils.hpp">file_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_generic_guard.hpp.html#file-ltb-util-include-ltb-util-generic-guard.hpp">generic_guard.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_hash_utils.hpp.html#file-ltb-util-include-ltb-util-hash-utils.hpp">hash_utils.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_ignore.hpp.html#file-ltb-util-include-ltb-util-ignore.hpp">ignore.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_power_of_2.hpp.html#file-ltb-util-include-ltb-util-power-of-2.hpp">power_of_2.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_priority_tag.hpp.html#file-ltb-util-include-ltb-util-priority-tag.hpp">priority_tag.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_result.hpp.html#file-ltb-util-include-ltb-util-result.hpp">result.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_string.hpp.html#file-ltb-util-include-ltb-util-string.hpp">string.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_timer.hpp.html#file-ltb-util-include-ltb-util-timer.hpp">timer.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_type_string.hpp.html#file-ltb-util-include-ltb-util-type-string.hpp">type_string.hpp</a></li><li>File <a href="file_ltb-util_include_ltb_util_uuid.hpp.html#file-ltb-util-include-ltb-util-uuid.hpp">uuid.hpp</a></li><li class="lastChild">File <a href="file_ltb-util_include_ltb_util_variant_utils.hpp.html#file-ltb-util-include-ltb-util-variant-utils.hpp">variant_utils.hpp</a></li></ul></li></ul></li></ul></li></ul></li>
     </ul>
   </li><!-- only tree view element -->
 </ul><!-- /treeView file-treeView --></section>
@@ -266,6 +347,27 @@
 <li class="toctree-l2"><a class="reference internal" href="namespace_ltb__app.html#classes">Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_ltb__app.html#enums">Enums</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_ltb__app.html#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_ltb__geom.html">Namespace ltb::geom</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom.html#namespaces">Namespaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom.html#enums">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom.html#typedefs">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom.html#variables">Variables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_ltb__geom__detail.html">Namespace ltb::geom::detail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_ltb__geom__detail.html#classes">Classes</a></li>
 </ul>
 </li>
 </ul>
@@ -329,6 +431,118 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="structltb_1_1app_1_1ApplicationInitialization.html">Struct ApplicationInitialization</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="structltb_1_1app_1_1ApplicationInitialization.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Ball.html">Template Struct Ball</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Ball.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Box.html">Template Struct Box</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Box.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Capsule.html">Template Struct Capsule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Capsule.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1detail_1_1Ray.html">Template Struct Ray</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1detail_1_1Ray.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator.html">Template Struct Interpolator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html">Template Struct Interpolator&lt; 2, T &gt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_012_00_01T_01_4.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4.html">Template Struct Interpolator&lt; 3, T &gt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Interpolator_3_013_00_01T_01_4.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Mesh.html">Template Struct Mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Mesh.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1MeshAndTransform.html">Template Struct MeshAndTransform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1MeshAndTransform.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Polygon.html">Template Struct Polygon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Polygon.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Range.html">Template Struct Range</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Range.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Shape.html">Template Struct Shape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Shape.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4.html">Template Struct Shape&lt; S&lt; L, T &gt; &gt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_01_4_01_4.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4.html">Template Struct Shape&lt; S&lt; L, T, Q &gt; &gt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structltb_1_1geom_1_1Shape_3_01S_3_01L_00_01T_00_01Q_01_4_01_4.html#struct-documentation">Struct Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -546,6 +760,30 @@
 </li>
 </ul>
 </div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html">Enum Corner2d</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_interpolator__2d_8hpp_1a8706f656c70d55621e85cd5f17c4a86d.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566.html">Enum Corner3d</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_interpolator__3d_8hpp_1aac391e403032802123085d33f2058566.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html">Enum GeometryFormat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_mesh_8hpp_1a436d3e870e69cfb98fef0e655a8580d8.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 <section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h3>
@@ -553,6 +791,238 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="function_application__data_8hpp_1aa5f503bcc0491481d1241984727cafdd.html">Function ltb::app::samples_with_monitor_scale</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="function_application__data_8hpp_1aa5f503bcc0491481d1241984727cafdd.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ltb-geom_2include_2ltb_2geom_2comparison__utils_8hpp_1aaf8192c9a91f2b07fda08fc454d8ec8c.html">Template Function ltb::geom::almost_equal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ltb-geom_2include_2ltb_2geom_2comparison__utils_8hpp_1aaf8192c9a91f2b07fda08fc454d8ec8c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_axes__mesh_8hpp_1a47f1ab482dc23edc6de4ef95b0f6378d.html">Template Function ltb::geom::axes_mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_axes__mesh_8hpp_1a47f1ab482dc23edc6de4ef95b0f6378d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951.html">Template Function ltb::geom::center</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_range_8hpp_1a7c30d0fb0bcbf9741d84401e6bab1117.html">Template Function ltb::geom::contains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_range_8hpp_1a7c30d0fb0bcbf9741d84401e6bab1117.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273.html">Template Function ltb::geom::cube_mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74.html">Template Function ltb::geom::dimensions(Range&lt;T&gt; const&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8.html">Template Function ltb::geom::dimensions(Box&lt;L, T&gt; const&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e.html">Template Function ltb::geom::disc_mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42.html">Template Function ltb::geom::icosphere_mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c.html">Template Function ltb::geom::identity_mat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1aae02beb069ae6cd02d00ca7c398f874c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef.html">Template Function ltb::geom::inf</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af.html">Function ltb::geom::is_triangle_format</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_mesh_8hpp_1a0e58be585f02e4adc5e76c510a72b7af.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_solvers_8hpp_1a81fbe6d63292a8975b7884a82a63dfe4.html">Template Function ltb::geom::is_zero</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_solvers_8hpp_1a81fbe6d63292a8975b7884a82a63dfe4.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd.html">Template Function ltb::geom::make_zeroed_vec(T)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf.html">Template Function ltb::geom::make_zeroed_vec(T, T)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad.html">Template Function ltb::geom::make_zeroed_vec(T, T, T)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7.html">Function ltb::geom::normals_matrix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79.html">Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, GeometryFormat const&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea.html">Template Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, Ball&lt;L, T&gt; const&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad.html">Template Function ltb::geom::operator&lt;&lt;(std::ostream&amp;, Box&lt;L, T&gt; const&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578.html">Template Function ltb::geom::operator==</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_io_8hpp_1a6c0ede59af1868e21977241ea39bcb20.html">Template Function ltb::geom::operator&gt;&gt;(std::istream&amp;, Ball&lt;L, T&gt;&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_io_8hpp_1a6c0ede59af1868e21977241ea39bcb20.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_io_8hpp_1a3502cb8184ae89c5b831fb5a116d43b0.html">Template Function ltb::geom::operator&gt;&gt;(std::istream&amp;, Box&lt;L, T&gt;&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_io_8hpp_1a3502cb8184ae89c5b831fb5a116d43b0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_plane__mesh_8hpp_1a2527abee8ff7b49900bf39e0c7119bfc.html">Template Function ltb::geom::plane_mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_plane__mesh_8hpp_1a2527abee8ff7b49900bf39e0c7119bfc.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_solvers_8hpp_1a2d8eb0d0ac63a932f45dd4a16dfa3cf8.html">Template Function ltb::geom::solve_cubic</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_solvers_8hpp_1a2d8eb0d0ac63a932f45dd4a16dfa3cf8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_solvers_8hpp_1aaa5d4e4ea678305236c87638c0f5e48a.html">Template Function ltb::geom::solve_quadratic</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_solvers_8hpp_1aaa5d4e4ea678305236c87638c0f5e48a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_mesh_8hpp_1a0dbe34bfbd71a492dbb2bfc73f890a7b.html">Template Function ltb::geom::transform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_mesh_8hpp_1a0dbe34bfbd71a492dbb2bfc73f890a7b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701.html">Template Function ltb::geom::transform_point</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e.html">Template Function ltb::geom::transform_vector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_vec_8hpp_1a59ad7a06c564f6999ec47970f31b806e.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -583,8 +1053,8 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_comparison__utils_8hpp_1aa620c1f78777faba7f5ed6e7a7bc53de.html">Template Function ltb::util::almost_equal</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_comparison__utils_8hpp_1aa620c1f78777faba7f5ed6e7a7bc53de.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_ltb-util_2include_2ltb_2util_2comparison__utils_8hpp_1aa620c1f78777faba7f5ed6e7a7bc53de.html">Template Function ltb::util::almost_equal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ltb-util_2include_2ltb_2util_2comparison__utils_8hpp_1aa620c1f78777faba7f5ed6e7a7bc53de.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -1210,6 +1680,14 @@
 <h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline"></a></h3>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c.html">Variable ltb::geom::shape_dimensions_v</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_shape__info_8hpp_1a95e46a1e75734c19636c2bca21c4341c.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="variable_error__callback_8hpp_1aeca38cc1a244a6770abd4ab78abfa295.html">Variable ltb::util::ignore_errors</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="variable_error__callback_8hpp_1aeca38cc1a244a6770abd4ab78abfa295.html#variable-documentation">Variable Documentation</a></li>
 </ul>
@@ -1229,8 +1707,8 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_comparison__utils_8hpp_1a1a243327ff6a36dea85b8ce1a56b58d7.html">Define GOOGLE_COMPARISON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_comparison__utils_8hpp_1a1a243327ff6a36dea85b8ce1a56b58d7.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_ltb-util_2include_2ltb_2util_2comparison__utils_8hpp_1a1a243327ff6a36dea85b8ce1a56b58d7.html">Define GOOGLE_COMPARISON</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_ltb-util_2include_2ltb_2util_2comparison__utils_8hpp_1a1a243327ff6a36dea85b8ce1a56b58d7.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -1254,6 +1732,262 @@
 </section>
 <section id="typedefs">
 <h3>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047.html">Typedef ltb::geom::Ball2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40.html">Typedef ltb::geom::Ball3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1.html">Typedef ltb::geom::Box2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c.html">Typedef ltb::geom::Box3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636.html">Typedef ltb::geom::Capsule2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e.html">Typedef ltb::geom::Capsule3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666.html">Typedef ltb::geom::DBall2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb.html">Typedef ltb::geom::DBall3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c.html">Typedef ltb::geom::DBox2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc.html">Typedef ltb::geom::DBox3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156.html">Typedef ltb::geom::DCapsule2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a.html">Typedef ltb::geom::DCapsule3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20.html">Typedef ltb::geom::dMesh2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669.html">Typedef ltb::geom::dMesh2AndTransform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa.html">Typedef ltb::geom::dMesh3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55.html">Typedef ltb::geom::dMesh3AndTransform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d.html">Typedef ltb::geom::DPolygon2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f.html">Typedef ltb::geom::DRay2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961.html">Typedef ltb::geom::DRay3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86.html">Typedef ltb::geom::Mesh2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65.html">Typedef ltb::geom::Mesh2AndTransform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15.html">Typedef ltb::geom::Mesh3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b.html">Typedef ltb::geom::Mesh3AndTransform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d.html">Typedef ltb::geom::Polygon2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b.html">Typedef ltb::geom::Range2D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_range_8hpp_1a2ecad0a888dc52543d9c8b94a1b35e2c.html">Typedef ltb::geom::Range2Di</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_range_8hpp_1a2ecad0a888dc52543d9c8b94a1b35e2c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html">Typedef ltb::geom::Ray</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb.html">Typedef ltb::geom::Ray2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html">Typedef ltb::geom::Ray3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a.html">Typedef ltb::geom::shape_type_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143.html">Typedef ltb::geom::TRay2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456.html">Typedef ltb::geom::TRay3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="typedef_duration_8hpp_1abc0ba108ea35384ba9bac2d005ec8270.html">Typedef ltb::util::Duration</a><ul>

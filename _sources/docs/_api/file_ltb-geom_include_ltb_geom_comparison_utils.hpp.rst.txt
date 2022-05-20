@@ -1,0 +1,55 @@
+
+.. _file_ltb-geom_include_ltb_geom_comparison_utils.hpp:
+
+File comparison_utils.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom>` (``ltb-geom/include/ltb/geom``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/comparison_utils.hpp``)
+---------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_comparison_utils.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ltb/util/comparison_utils.hpp`` (:ref:`file_ltb-util_include_ltb_util_comparison_utils.hpp`)
+
+- ``vec.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_vec.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ltb-geom_2include_2ltb_2geom_2comparison__utils_8hpp_1aaf8192c9a91f2b07fda08fc454d8ec8c`
+

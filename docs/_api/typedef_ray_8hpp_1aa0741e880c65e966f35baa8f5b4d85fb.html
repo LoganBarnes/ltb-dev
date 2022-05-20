@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typedef ltb::geom::Ray2 &mdash; LTB Development 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Typedef ltb::geom::Ray3" href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html" />
+    <link rel="prev" title="Typedef ltb::geom::Ray" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> LTB Development
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html">LTB Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-util/README.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ltb-geom/README.html">ltb-geom</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">APIs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#enums">Enums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1adc8937a13588f73b208815c3589e4047.html">Typedef ltb::geom::Ball2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1abeb856afc346b3efe0449e37a4fa1e40.html">Typedef ltb::geom::Ball3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff42cc8b7d4583307f46643c1ac6eef1.html">Typedef ltb::geom::Box2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aa3cd2638da82692ed0edab51b58c069c.html">Typedef ltb::geom::Box3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1ac98256bf316a1256086c3e5785eba636.html">Typedef ltb::geom::Capsule2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1aff7f2f66f22c2bd3b56732a81747d63e.html">Typedef ltb::geom::Capsule3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a179db2bb3e99ac9b8f587a74fddc8666.html">Typedef ltb::geom::DBall2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a111d8439877bc311ebeb6e2bff45cebb.html">Typedef ltb::geom::DBall3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a32f331eefdb3921f5532a30681e9af5c.html">Typedef ltb::geom::DBox2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a26604a1a75d9a9f6aa7f39f5c0c244cc.html">Typedef ltb::geom::DBox3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a58e0eb9d257a46a4e9bbf8cc06b4b156.html">Typedef ltb::geom::DCapsule2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a9bd5db34d3089f81b1e69f4e4c34726a.html">Typedef ltb::geom::DCapsule3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a88e5ea4641ae694403b303c15b66df20.html">Typedef ltb::geom::dMesh2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a8181bae329e5869e804bfd4b794ba669.html">Typedef ltb::geom::dMesh2AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a0e7fa34deaaf1295784415a4e29991aa.html">Typedef ltb::geom::dMesh3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55.html">Typedef ltb::geom::dMesh3AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a6b197fc088ee5ee0385f757aa8822a2d.html">Typedef ltb::geom::DPolygon2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1afd8484adf4ff24aaf146a1087f76c05f.html">Typedef ltb::geom::DRay2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a26f709f5ce28b151d495c4de8c180961.html">Typedef ltb::geom::DRay3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a3c804db5b43d97a93ced069f75186a86.html">Typedef ltb::geom::Mesh2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1a861a62015e35ff32da6ee9a77d35aa65.html">Typedef ltb::geom::Mesh2AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1abd3142f120f7d1dddc491c900f02ee15.html">Typedef ltb::geom::Mesh3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mesh_8hpp_1ae2d9c809388a675160aeb197778eda2b.html">Typedef ltb::geom::Mesh3AndTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ltb-geom_2include_2ltb_2geom_2shapes_2fwd_8hpp_1a156a11affc798edda9c4e3b8b65ff98d.html">Typedef ltb::geom::Polygon2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_range_8hpp_1a3aedf1d6045047f80cadfe3dde0f9c4b.html">Typedef ltb::geom::Range2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_range_8hpp_1a2ecad0a888dc52543d9c8b94a1b35e2c.html">Typedef ltb::geom::Range2Di</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html">Typedef ltb::geom::Ray</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Typedef ltb::geom::Ray2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html">Typedef ltb::geom::Ray3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_shape__info_8hpp_1a549d285f2c022ea02131f40552808e6a.html">Typedef ltb::geom::shape_type_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143.html">Typedef ltb::geom::TRay2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_ray_8hpp_1ad609ed0fb9031f1fd0346bfbbaa5d456.html">Typedef ltb::geom::TRay3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_duration_8hpp_1abc0ba108ea35384ba9bac2d005ec8270.html">Typedef ltb::util::Duration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_error__callback_8hpp_1aeaa0b4bdf4f2e8887043800f63ff2335.html">Typedef ltb::util::ErrorCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_blocking__queue_8hpp_1aaa08f16d1122bca0b9d3bc563ace39e9.html">Typedef ltb::util::NotifyCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_result_8hpp_1ac8c82aa741e46fb3b7b8ade3ab134a30.html">Typedef ltb::util::Result</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">LTB Development</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="library_root.html">APIs</a> &raquo;</li>
+      <li>Typedef ltb::geom::Ray2</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/_api/typedef_ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="typedef-ltb-geom-ray2">
+<span id="exhale-typedef-ray-8hpp-1aa0741e880c65e966f35baa8f5b4d85fb"></span><h1>Typedef ltb::geom::Ray2<a class="headerlink" href="#typedef-ltb-geom-ray2" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_ltb-geom_include_ltb_geom_ray.hpp.html#file-ltb-geom-include-ltb-geom-ray-hpp"><span class="std std-ref">File ray.hpp</span></a></p></li>
+</ul>
+<section id="typedef-documentation">
+<h2>Typedef Documentation<a class="headerlink" href="#typedef-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3ltb4geom4Ray2E">
+<span id="_CPPv3N3ltb4geom4Ray2E"></span><span id="_CPPv2N3ltb4geom4Ray2E"></span><span class="target" id="ray_8hpp_1aa0741e880c65e966f35baa8f5b4d85fb"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">ltb</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">geom</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Ray2</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="typedef_ray_8hpp_1a55b6230786e9de1f52de912f7177b143.html#_CPPv4I0EN3ltb4geom5TRay2E" title="ltb::geom::TRay2"><span class="n"><span class="pre">TRay2</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N3ltb4geom4Ray2E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="typedef_ray_8hpp_1a2efb606b236749aea4e3ff338425586c.html" class="btn btn-neutral float-left" title="Typedef ltb::geom::Ray" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="typedef_ray_8hpp_1a69ad44728984b04090ed67efb112c1f3.html" class="btn btn-neutral float-right" title="Typedef ltb::geom::Ray3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Logan Barnes.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

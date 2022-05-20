@@ -1,0 +1,74 @@
+
+.. _file_ltb-geom_include_ltb_geom_shapes_box.hpp:
+
+File box.hpp
+============
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom_shapes>` (``ltb-geom/include/ltb/geom/shapes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/shapes/box.hpp``)
+---------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_shapes_box.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fwd.hpp`` (:ref:`file_ltb-app-tmp_include_ltb_app_fwd.hpp`)
+
+- ``glm/common.hpp``
+
+- ``ltb/geom/vec.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_vec.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_2d.hpp`
+
+- :ref:`file_ltb-geom_include_ltb_geom_interpolator_3d.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structltb_1_1geom_1_1Box`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_box_8hpp_1a580df393ef9bd6d808687b71cd8fb951`
+
+- :ref:`exhale_function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8`
+

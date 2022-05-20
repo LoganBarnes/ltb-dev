@@ -1,0 +1,14 @@
+.. _exhale_function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad:
+
+Template Function ltb::geom::make_zeroed_vec(T, T, T)
+=====================================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_vec.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::make_zeroed_vec(T, T, T)
+   :project: ltb

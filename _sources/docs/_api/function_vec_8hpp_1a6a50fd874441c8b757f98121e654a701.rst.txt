@@ -1,0 +1,14 @@
+.. _exhale_function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701:
+
+Template Function ltb::geom::transform_point
+============================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_vec.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ltb::geom::transform_point(glm::mat<L+1, L+1, T> const&, glm::vec<L, T> const&)
+   :project: ltb

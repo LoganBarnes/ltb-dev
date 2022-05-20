@@ -1,0 +1,17 @@
+.. _exhale_struct_structltb_1_1geom_1_1Range:
+
+Template Struct Range
+=====================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_range.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ltb::geom::Range
+   :project: ltb
+   :members:
+   :protected-members:
+   :undoc-members:

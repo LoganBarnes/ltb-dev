@@ -1,0 +1,53 @@
+
+.. _file_ltb-geom_include_ltb_geom_shapes_meshes_icosphere_mesh.hpp:
+
+File icosphere_mesh.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_ltb-geom_include_ltb_geom_shapes_meshes>` (``ltb-geom/include/ltb/geom/shapes/meshes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``ltb-geom/include/ltb/geom/shapes/meshes/icosphere_mesh.hpp``)
+---------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_ltb-geom_include_ltb_geom_shapes_meshes_icosphere_mesh.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ltb/geom/mesh.hpp`` (:ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ltb`
+
+- :ref:`namespace_ltb__geom`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_icosphere__mesh_8hpp_1a3b35dbc3ad356eaa3d27bb9b68900e42`
+

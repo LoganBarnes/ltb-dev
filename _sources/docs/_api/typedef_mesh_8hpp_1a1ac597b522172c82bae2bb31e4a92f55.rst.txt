@@ -1,0 +1,14 @@
+.. _exhale_typedef_mesh_8hpp_1a1ac597b522172c82bae2bb31e4a92f55:
+
+Typedef ltb::geom::dMesh3AndTransform
+=====================================
+
+- Defined in :ref:`file_ltb-geom_include_ltb_geom_mesh.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ltb::geom::dMesh3AndTransform
+   :project: ltb

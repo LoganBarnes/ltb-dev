@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ltb-dev &mdash; LTB Development 1.0.0 documentation</title>
+  <title>LTB Development &mdash; LTB Development 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
@@ -45,7 +45,6 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ltb-util/README.html">LTB Utilities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ltb-util/README.html#todo">TODO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ltb-geom/README.html">LTB Geometry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/_api/library_root.html">APIs</a></li>
 </ul>
@@ -64,7 +63,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>ltb-dev</li>
+      <li>LTB Development</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -74,8 +73,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ltb-dev">
-<h1>ltb-dev<a class="headerlink" href="#ltb-dev" title="Permalink to this headline"></a></h1>
+  <section id="ltb-development">
+<h1>LTB Development<a class="headerlink" href="#ltb-development" title="Permalink to this headline"></a></h1>
 <p>A top level development repository containing all the <code class="docutils literal notranslate"><span class="pre">ltb-*</span></code> projects.</p>
 <section id="checkout">
 <h2>Checkout<a class="headerlink" href="#checkout" title="Permalink to this headline"></a></h2>
@@ -159,27 +158,48 @@ ctest -C Debug <span class="c1"># Test Debug build</span>
 </pre></div>
 </div>
 </section>
+</section>
 <section id="documentation">
-<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h3>
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h2>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"></a></h3>
+<section id="id1">
+<h4>Unix<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install -y python3-pip python3-venv doxygen
+</pre></div>
+</div>
+</section>
+<section id="pipx">
+<h4>Pipx<a class="headerlink" href="#pipx" title="Permalink to this headline"></a></h4>
 <p><a class="reference external" href="https://pypa.github.io/pipx/">pipx</a> for managing python dependencies (can also just use <code class="docutils literal notranslate"><span class="pre">pip</span></code>).</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 </pre></div>
 </div>
+</section>
+<section id="sphinx">
+<h4>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline"></a></h4>
 <p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> for building web pages from the documentation.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># The main Markdown to HTML generation tool</span>
 pipx install sphinx
 <span class="c1"># Add extensions and themes to sphinx</span>
-pipx inject sphinx breathe myst-parser sphinxcontrib-mermaid furo exhale
-<span class="c1"># Add a tool to enable hot reloading when editing docs</span>
-pipx inject sphinx sphinx-autobuild --include-apps
+pipx inject sphinx breathe exhale myst-parser sphinxcontrib-mermaid sphinx_rtd_theme
+</pre></div>
+</div>
+<p>Build the docs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># from the root directory</span>
+sphinx-build -b html . ./docs/_build
+</pre></div>
+</div>
+<p>View the docs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># from the &#39;docs/_build&#39; directory</span>
+python3 -m http.server
 </pre></div>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ltb-util/README.html">LTB Utilities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ltb-util/README.html#todo">TODO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ltb-geom/README.html">LTB Geometry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/_api/library_root.html">APIs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="docs/_api/library_root.html#class-hierarchy">Class Hierarchy</a></li>
@@ -189,6 +209,7 @@ pipx inject sphinx sphinx-autobuild --include-apps
 </li>
 </ul>
 </div>
+</section>
 </section>
 </section>
 </section>

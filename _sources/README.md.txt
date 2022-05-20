@@ -1,4 +1,4 @@
-# ltb-dev
+# LTB Development
 
 A top level development repository containing all the `ltb-*` projects.
 
@@ -89,7 +89,17 @@ ctest -C Debug # Test Debug build
 ./_deps/ltb<lib>-build/Debug/<executable> # Debug executable
 ```
 
-### Documentation
+## Documentation
+
+### Dependencies
+
+#### Unix
+
+```bash
+sudo apt-get install -y python3-pip python3-venv doxygen
+```
+
+#### Pipx
 
 [pipx](https://pypa.github.io/pipx/) for managing python dependencies (can also just use `pip`).
 
@@ -98,13 +108,27 @@ python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 ```
 
+#### Sphinx
+
 [Sphinx](https://www.sphinx-doc.org/en/master/) for building web pages from the documentation.
 
 ```bash
 # The main Markdown to HTML generation tool
 pipx install sphinx
 # Add extensions and themes to sphinx
-pipx inject sphinx breathe myst-parser sphinxcontrib-mermaid furo exhale
-# Add a tool to enable hot reloading when editing docs
-pipx inject sphinx sphinx-autobuild --include-apps
+pipx inject sphinx breathe exhale myst-parser sphinxcontrib-mermaid sphinx_rtd_theme
+```
+
+Build the docs:
+
+```bash
+# from the root directory
+sphinx-build -b html . ./docs/_build
+```
+
+View the docs:
+
+```bash
+# from the 'docs/_build' directory
+python3 -m http.server
 ```

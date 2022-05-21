@@ -173,13 +173,13 @@ Functions
 
 - :ref:`exhale_function_enum__flags_8hpp_1ae99818b648bb825b26a7b2713f93618e`
 
-- :ref:`exhale_function_type__string_8hpp_1a8064856a3698f5b28a8ed50b3cfca5a3`
-
 - :ref:`exhale_function_type__string_8hpp_1a4634b9111f0811193372513fad37a1b8`
 
-- :ref:`exhale_function_variant__utils_8hpp_1aa59f46c67f50b28244fbe4f16679b918`
+- :ref:`exhale_function_type__string_8hpp_1a8064856a3698f5b28a8ed50b3cfca5a3`
 
 - :ref:`exhale_function_variant__utils_8hpp_1af2ae074a23d3d8cb6c54b357b5d9042d`
+
+- :ref:`exhale_function_variant__utils_8hpp_1aa59f46c67f50b28244fbe4f16679b918`
 
 - :ref:`exhale_function_variant__utils_8hpp_1ad04e6ceb1283074e3064b4850e48f3bd`
 

@@ -47,15 +47,7 @@ cpmaddpackage(NAME
               "GLFW_BUILD_EXAMPLES OFF"
               "GLFW_BULID_DOCS OFF"
               )
-cpmaddpackage(NAME
-              imgui
-              GIT_TAG
-              e346059eef140c5a8611581f3e6c8b8816d6998e # master
-              GITHUB_REPOSITORY
-              ocornut/imgui
-              DOWNLOAD_ONLY
-              TRUE
-              )
+cpmaddpackage("gh:ocornut/imgui@1.87")
 cpmaddpackage("gh:gabime/spdlog@1.9.2")
 
 if(range-v3_ADDED)

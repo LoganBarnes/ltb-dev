@@ -7,36 +7,12 @@ project(LtbApp VERSION 1.0.0)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/LtbCreateApp.cmake)
 
 # ##############################################################################
-# CMake Package Manager ###
+# CMake Package Manager
 # ##############################################################################
-set(CPM_DOWNLOAD_VERSION 0.35.0)
-
-if(CPM_SOURCE_CACHE)
-    set(CPM_DOWNLOAD_LOCATION
-        "${CPM_SOURCE_CACHE}/cpm/CPM_${CPM_DOWNLOAD_VERSION}.cmake"
-        )
-elseif(DEFINED ENV{CPM_SOURCE_CACHE})
-    set(CPM_DOWNLOAD_LOCATION
-        "$ENV{CPM_SOURCE_CACHE}/cpm/CPM_${CPM_DOWNLOAD_VERSION}.cmake"
-        )
-else()
-    set(CPM_DOWNLOAD_LOCATION
-        "${CMAKE_BINARY_DIR}/cmake/CPM_${CPM_DOWNLOAD_VERSION}.cmake"
-        )
-endif()
-
-if(NOT (EXISTS ${CPM_DOWNLOAD_LOCATION}))
-    message(STATUS "Downloading CPM.cmake to ${CPM_DOWNLOAD_LOCATION}")
-    file(DOWNLOAD
-         https://github.com/TheLartians/CPM.cmake/releases/download/v${CPM_DOWNLOAD_VERSION}/CPM.cmake
-         ${CPM_DOWNLOAD_LOCATION}
-         )
-endif()
-
-include(${CPM_DOWNLOAD_LOCATION})
+include(cmake/CPM.cmake)
 
 # ##############################################################################
-# External Packages ###
+# External Packages
 # ##############################################################################
 find_package(Vulkan REQUIRED)
 
@@ -71,7 +47,15 @@ cpmaddpackage(NAME
               "GLFW_BUILD_EXAMPLES OFF"
               "GLFW_BULID_DOCS OFF"
               )
-cpmaddpackage("gh:ocornut/imgui@1.87")
+cpmaddpackage(NAME
+              imgui
+              GIT_TAG
+              e346059eef140c5a8611581f3e6c8b8816d6998e # master
+              GITHUB_REPOSITORY
+              ocornut/imgui
+              DOWNLOAD_ONLY
+              TRUE
+              )
 cpmaddpackage("gh:gabime/spdlog@1.9.2")
 
 if(range-v3_ADDED)
@@ -120,10 +104,11 @@ if(imgui_ADDED)
                                # Ignore build warning on this third-party code
                                $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-w>
                            )
+    target_compile_features(imgui PUBLIC cxx_std_11)
 endif()
 
 # ##############################################################################
-# LtbApp::LtbApp ###
+# LtbApp::LtbApp
 # ##############################################################################
 ltb_create_default_targets(LtbApp
                            src/application_data.cpp

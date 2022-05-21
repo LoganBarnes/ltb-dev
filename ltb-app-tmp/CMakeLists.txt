@@ -60,6 +60,11 @@ if(range-v3_ADDED)
                                INTERFACE
                                    $<BUILD_INTERFACE:${range-v3_SOURCE_DIR}/include>
                                )
+    target_compile_options(range-v3
+                           INTERFACE
+                               $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/permissive->
+                               $<$<COMPILE_LANG_AND_ID:CUDA,MSVC>:-Xcompiler=/permissive->
+                           )
 endif()
 
 if(GLFW_ADDED)

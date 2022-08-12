@@ -8,6 +8,7 @@ File enum_bits.hpp
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
+
 .. contents:: Contents
    :local:
    :backlinks: none
@@ -53,9 +54,9 @@ Functions
 
 - :ref:`exhale_function_enum__bits_8hpp_1a183529fc8d8ca0ebe65b21da730a889b`
 
-- :ref:`exhale_function_enum__bits_8hpp_1aaac3704ba5ec82e9a29590c2d46e3eb0`
-
 - :ref:`exhale_function_enum__bits_8hpp_1a0a83863657c3934e4001d19ceb14a7f5`
+
+- :ref:`exhale_function_enum__bits_8hpp_1aaac3704ba5ec82e9a29590c2d46e3eb0`
 
 - :ref:`exhale_function_enum__bits_8hpp_1a42777620d0f863f10cb73788d10b3222`
 

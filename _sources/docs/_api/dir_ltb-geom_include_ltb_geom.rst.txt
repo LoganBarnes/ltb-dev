@@ -9,6 +9,7 @@ Directory geom
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
+
 *Directory path:* ``ltb-geom/include/ltb/geom``
 
 Subdirectories

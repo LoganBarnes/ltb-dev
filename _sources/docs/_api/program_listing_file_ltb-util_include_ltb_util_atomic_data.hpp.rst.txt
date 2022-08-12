@@ -42,6 +42,10 @@ Program Listing for File atomic_data.hpp
        template <typename Func>
        auto use_safely(Func func) const;
    
+       auto load() const -> T;
+   
+       auto store(T t) -> void;
+   
        template <typename Pred, typename Func>
        auto wait_to_use_safely(Pred predicate, Func func) -> void;
    
@@ -59,7 +63,7 @@ Program Listing for File atomic_data.hpp
    
        auto notify_all() -> void;
    
-       [[nodiscard]] auto lock() const -> ScopedLock;
+       [[nodiscard]] auto scoped_lock() const -> ScopedLock;
    
    private:
        std::shared_ptr<std::mutex>              lock_;
@@ -92,6 +96,16 @@ Program Listing for File atomic_data.hpp
    auto AtomicData<T>::use_safely(Func func) const {
        std::lock_guard<std::mutex> scoped_lock(*lock_);
        return func(data_);
+   }
+   
+   template <typename T>
+   auto AtomicData<T>::load() const -> T {
+       return use_safely([](auto data) { return data; });
+   }
+   
+   template <typename T>
+   auto AtomicData<T>::store(T data) -> void {
+       use_safely([data](auto& stored_data) { stored_data = data; });
    }
    
    template <typename T>
@@ -146,10 +160,10 @@ Program Listing for File atomic_data.hpp
    }
    
    template <typename T>
-   auto AtomicData<T>::lock() const -> ScopedLock {
-       ScopedLock scoped_lock{lock_};
-       scoped_lock.lock = std::make_shared<std::lock_guard<std::mutex>>(*scoped_lock.mutex);
-       return scoped_lock;
+   auto AtomicData<T>::scoped_lock() const -> ScopedLock {
+       ScopedLock lock{lock_};
+       lock.lock = std::make_shared<std::lock_guard<std::mutex>>(*lock.mutex);
+       return lock;
    }
    
    } // namespace ltb::util

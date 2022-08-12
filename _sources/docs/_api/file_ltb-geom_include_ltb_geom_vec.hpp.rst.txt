@@ -8,6 +8,7 @@ File vec.hpp
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
+
 .. contents:: Contents
    :local:
    :backlinks: none
@@ -79,11 +80,11 @@ Functions
 
 - :ref:`exhale_function_vec_8hpp_1a48c55bbff14a7c0b18b52e2cb2b81bef`
 
+- :ref:`exhale_function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad`
+
 - :ref:`exhale_function_vec_8hpp_1ad5a8c2f738d8e2e1ff229720917b9ebd`
 
 - :ref:`exhale_function_vec_8hpp_1a1739a6b3051792a716e5c5ccf37881cf`
-
-- :ref:`exhale_function_vec_8hpp_1acf8acd3d390c692ad2351a532b24baad`
 
 - :ref:`exhale_function_vec_8hpp_1a6a50fd874441c8b757f98121e654a701`
 

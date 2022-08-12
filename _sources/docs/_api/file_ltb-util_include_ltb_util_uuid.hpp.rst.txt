@@ -8,6 +8,7 @@ File uuid.hpp
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
+
 .. contents:: Contents
    :local:
    :backlinks: none
@@ -86,7 +87,7 @@ Functions
 
 - :ref:`exhale_function_uuid_8hpp_1abd43eb60e97059e0ac5b954037a4f29f`
 
-- :ref:`exhale_function_uuid_8hpp_1ac7fdad69be16f242da3d626fa041f9ae`
-
 - :ref:`exhale_function_uuid_8hpp_1a943f3e17d9ca8725c46cce92cf521003`
+
+- :ref:`exhale_function_uuid_8hpp_1ac7fdad69be16f242da3d626fa041f9ae`
 

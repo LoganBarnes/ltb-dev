@@ -8,6 +8,7 @@ File io.hpp
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
+
 .. contents:: Contents
    :local:
    :backlinks: none
@@ -53,9 +54,9 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad`
-
 - :ref:`exhale_function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea`
+
+- :ref:`exhale_function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad`
 
 - :ref:`exhale_function_io_8hpp_1a3502cb8184ae89c5b831fb5a116d43b0`
 

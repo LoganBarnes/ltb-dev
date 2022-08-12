@@ -9,6 +9,7 @@ Directory ltb
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
+
 *Directory path:* ``ltb-app-tmp/include/ltb``
 
 Subdirectories

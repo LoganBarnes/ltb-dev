@@ -76,9 +76,9 @@ Functions
 
 - :ref:`exhale_function_cube__mesh_8hpp_1afd7fd76e9629ea10b9dab86a65897273`
 
-- :ref:`exhale_function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74`
-
 - :ref:`exhale_function_box_8hpp_1a527d41cfbc73e9c4633a2b8e0997aaa8`
+
+- :ref:`exhale_function_range_8hpp_1ad1f7933af03340e55515a4d0bb97ca74`
 
 - :ref:`exhale_function_disc__mesh_8hpp_1a10c6be2c992addef20d7b6457214fa0e`
 
@@ -100,11 +100,11 @@ Functions
 
 - :ref:`exhale_function_transform_8hpp_1a9b8799aa4791679e62a2fc19474b78d7`
 
-- :ref:`exhale_function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79`
-
 - :ref:`exhale_function_io_8hpp_1ac240c2e7a2f6c8f171298b4b8039f7ea`
 
 - :ref:`exhale_function_io_8hpp_1a579d76487a109f930ad3a4047bc420ad`
+
+- :ref:`exhale_function_mesh_8hpp_1a57e481d4bab7ca27405edccda3f70d79`
 
 - :ref:`exhale_function_mesh_8hpp_1a8fbadf2a256382a2c6ff52cd09e92578`
 

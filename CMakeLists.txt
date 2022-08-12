@@ -21,21 +21,21 @@ add_library(ltb_dev_settings INTERFACE)
 target_compile_options(ltb_dev_settings
                        INTERFACE
                            # Strict warnings/errors with gcc and clang
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wall>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wextra>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Werror>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wpedantic>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wunused>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-pedantic-errors>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Winit-self>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wold-style-cast>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Woverloaded-virtual>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wsign-conversion>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wshadow>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wmissing-declarations>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wmissing-include-dirs>
-                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang>:-Wno-unknown-pragmas>
-                           $<$<COMPILE_LANG_AND_ID:CXX,Clang>:-Wimplicit-float-conversion>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wall>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wextra>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Werror>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wpedantic>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wunused>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-pedantic-errors>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Winit-self>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wold-style-cast>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Woverloaded-virtual>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wsign-conversion>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wshadow>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wmissing-declarations>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wmissing-include-dirs>
+                           $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-Wno-unknown-pragmas>
+                           $<$<COMPILE_LANG_AND_ID:CXX,Clang,AppleClang>:-Wimplicit-float-conversion>
                            $<$<COMPILE_LANG_AND_ID:CXX,GNU>:-Wfloat-conversion>
                            # Strict warnings/errors with msvc
                            $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/external:W0>

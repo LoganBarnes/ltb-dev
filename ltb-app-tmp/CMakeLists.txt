@@ -41,7 +41,7 @@ cpmaddpackage(NAME
               GITHUB_REPOSITORY
               glfw/glfw
               GIT_TAG
-              3.3.6
+              3.3.8
               OPTIONS
               "GLFW_BUILD_TESTS OFF"
               "GLFW_BUILD_EXAMPLES OFF"
@@ -64,6 +64,10 @@ endif()
 
 if(GLFW_ADDED)
     add_library(glfw::glfw ALIAS glfw)
+    target_compile_options(glfw
+                           PRIVATE # Ignore build warning on this third-party code
+                               $<$<COMPILE_LANG_AND_ID:CXX,GNU,Clang,AppleClang>:-w>
+                           )
 endif()
 
 if(imgui_ADDED)
